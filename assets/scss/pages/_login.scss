@@ -23,18 +23,24 @@ form input {
   align-items: center;
   justify-content: space-between;
 }
+.form_group-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 hr {
   margin-top: 20px;
 }
-
+input {
+  transition: all 0.2s;
+}
 input:focus {
   outline: none;
   border: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid green;
 }
 
 .inputfield {
-  transition: all 0.2s;
   padding: 10px 10px;
   border-radius: 10px;
   width: 200px;
