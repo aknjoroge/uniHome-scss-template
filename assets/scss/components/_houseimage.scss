@@ -6,9 +6,14 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
+.images:hover ~ .item-details .item-name {
+  color: #ffffff;
+  background-color: #ffffff9c;
+}
 
 .images::-webkit-scrollbar {
   width: 20px;
+  height: 10px;
 }
 
 /* Track */
