@@ -4,7 +4,7 @@
   margin: 0;
   margin-top: 10px;
   border: none;
-  padding: 1rem 3rem;
+  padding: 12px 3rem;
   display: inline-block;
   text-decoration: none;
 
@@ -31,6 +31,13 @@
     color: $color_white;
     &::after {
       background-color: $color_blue;
+    }
+  }
+  &--green {
+    background-color: $color_green;
+    color: $color_white;
+    &::after {
+      background-color: $color_green;
     }
   }
 }

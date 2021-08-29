@@ -16,7 +16,7 @@
   height: 100vh;
 }
 form input {
-  margin: 1rem;
+  margin: 12px;
 }
 .form_group {
   display: flex;
@@ -32,17 +32,91 @@ hr {
   margin-top: 20px;
 }
 input {
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 input:focus {
   outline: none;
   border: 0;
   border-bottom: 2px solid green;
 }
+input::placeholder {
+  color: #999;
+  //   color: #999;
+}
 
 .inputfield {
+  background-color: rgb(184, 183, 183);
   padding: 10px 10px;
   border-radius: 10px;
   width: 200px;
   border: 0;
+}
+
+.logintitle {
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.forgot {
+  text-decoration: none;
+  color: red;
+  transition: all 0.2s;
+}
+.forgot:hover {
+  color: black;
+}
+
+.signup {
+  text-decoration: none;
+  color: green;
+  transition: all 0.2s;
+}
+
+.signup:hover {
+  color: rgb(177, 177, 18);
+}
+
+.menu {
+  margin-top: 10px;
+}
+
+.copyright {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.login-logo {
+  margin-bottom: 10px;
+}
+
+.register-form {
+  transition: all 0.5s;
+}
+.mg-5 {
+  margin: 5rem;
+}
+.hidden {
+  display: none;
+}
+
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #000000c7;
+  height: 100vh;
+}
+
+.forgot-password {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-title {
+  font-weight: 400;
+  margin-bottom: 5px;
 }

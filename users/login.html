@@ -9,9 +9,131 @@
   </head>
   <body>
     <div class="login">
+      <div class="modal hidden">
+        <div class="backdrop">
+          <div class="forgot-password">
+            <div class="card">
+              <h3 class="reset-title">Get reset link</h3>
+
+              <form action="">
+                <div class="form_group">
+                  <label>Email</label>
+                  <input
+                    class="inputfield"
+                    placeholder="you@example.com"
+                    type="email"
+                    name="email"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="form_group-input">
+                  <input class="btn btn--green" type="submit" value="Reset" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <main class="login-container">
         <div class="card">
-          <h2>Log into your account</h2>
+          <img
+            class="login-logo"
+            src="../assets/img/logo.png"
+            alt=""
+            srcset=""
+          />
+          <div class="register-form hidden">
+            <h3 class="logintitle">Create a free home account</h3>
+
+            <hr />
+            <div class="form-container">
+              <form>
+                <div class="form_group">
+                  <label>Name</label>
+                  <input
+                    class="inputfield"
+                    placeholder="you@example.com"
+                    type="name"
+                    name="name"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="form_group">
+                  <label>ID no</label>
+                  <input
+                    class="inputfield"
+                    placeholder="you@example.com"
+                    type="number"
+                    name="idno"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="form_group">
+                  <label>Email</label>
+                  <input
+                    class="inputfield"
+                    placeholder="you@example.com"
+                    type="email"
+                    name="email"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="form_group">
+                  <label>Phone</label>
+                  <input
+                    class="inputfield"
+                    placeholder="you@example.com"
+                    type="number"
+                    name="number"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="form_group">
+                  <label for="">Password</label>
+                  <input
+                    class="inputfield"
+                    required
+                    placeholder="••••••••"
+                    type="password"
+                    name="password"
+                    id=""
+                  />
+                </div>
+
+                <div class="form_group">
+                  <label for="">Confirm </label>
+                  <input
+                    class="inputfield"
+                    required
+                    placeholder="••••••••"
+                    type="password"
+                    name="password"
+                    id=""
+                  />
+                </div>
+                <div class="form_group-input">
+                  <input
+                    class="btn btn--green"
+                    type="submit"
+                    value="Register"
+                  />
+                </div>
+              </form>
+            </div>
+            <hr />
+            <div class="form_group menu">
+              <a class="signup" href="#">Login</a>
+            </div>
+            <div class="form_group menu">
+              <p class="copyright">&copy; Unihome 2021</p>
+            </div>
+          </div>
+          <h3 class="logintitle">Log into home account</h3>
           <hr />
           <div class="form-container">
             <form>
@@ -40,10 +162,15 @@
               <div class="form_group-input">
                 <input class="btn btn--blue" type="submit" value="login" />
               </div>
-              <hr />
-              <a href="#">Forgot password</a>
-              <a href="#">Sign up</a>
             </form>
+          </div>
+          <hr />
+          <div class="form_group menu">
+            <a class="forgot" href="#">Forgot password</a>
+            <a class="signup" href="#">Sign up</a>
+          </div>
+          <div class="form_group menu">
+            <p class="copyright">&copy; Unihome 2021</p>
           </div>
         </div>
       </main>

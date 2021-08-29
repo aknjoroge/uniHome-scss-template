@@ -28,7 +28,7 @@
   height: 100vh; }
 
 form input {
-  margin: 1rem; }
+  margin: 12px; }
 
 .form_group {
   display: flex;
@@ -44,26 +44,92 @@ hr {
   margin-top: 20px; }
 
 input {
-  transition: all 0.2s; }
+  transition: all 0.1s; }
 
 input:focus {
   outline: none;
   border: 0;
   border-bottom: 2px solid green; }
 
+input::placeholder {
+  color: #999; }
+
 .inputfield {
+  background-color: #b8b7b7;
   padding: 10px 10px;
   border-radius: 10px;
   width: 200px;
   border: 0; }
 
+.logintitle {
+  opacity: 0.8;
+  font-weight: 400; }
+
+.forgot {
+  text-decoration: none;
+  color: red;
+  transition: all 0.2s; }
+
+.forgot:hover {
+  color: black; }
+
+.signup {
+  text-decoration: none;
+  color: green;
+  transition: all 0.2s; }
+
+.signup:hover {
+  color: #b1b112; }
+
+.menu {
+  margin-top: 10px; }
+
+.copyright {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 10px; }
+
+.login-logo {
+  margin-bottom: 10px; }
+
+.register-form {
+  transition: all 0.5s; }
+
+.mg-5 {
+  margin: 5rem; }
+
+.hidden {
+  display: none; }
+
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #000000c7;
+  height: 100vh; }
+
+.forgot-password {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center; }
+
+.reset-title {
+  font-weight: 400;
+  margin-bottom: 5px; }
+
 * {
   margin: 0;
   font-family: "font-import"; }
 
+body {
+  background-color: #d2d6de;
+  padding: 1rem; }
+
 .card {
-  background-color: white;
-  width: 30rem;
+  background-color: #ffffffed;
+  width: 21rem;
   margin: 0 auto;
   padding: 2rem;
   border-radius: 10px;
@@ -74,7 +140,7 @@ input:focus {
   margin: 0;
   margin-top: 10px;
   border: none;
-  padding: 1rem 3rem;
+  padding: 12px 3rem;
   display: inline-block;
   text-decoration: none;
   border-radius: 1rem;
@@ -96,3 +162,8 @@ input:focus {
     color: white; }
     .btn--blue::after {
       background-color: #00a7d0; }
+  .btn--green {
+    background-color: #7ed56f;
+    color: white; }
+    .btn--green::after {
+      background-color: #7ed56f; }
