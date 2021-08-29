@@ -20,10 +20,14 @@ header {
   margin: 5px;
   list-style: none;
 }
+.content {
+  background-color: #f7f7f7;
+}
 
 .house-main {
   padding: 1rem;
   // justify-content: space-around;
+  justify-content: center;
   display: flex;
   background-color: #f7f7f7;
   flex-wrap: wrap;
@@ -33,11 +37,12 @@ header {
   background-color: white;
   // padding: 1rem;
   overflow: hidden;
-  box-shadow: 1px 1px 10px #00000069;
-  min-width: 300px;
+  overflow: hidden;
+  box-shadow: 5px 1px 10px #0000005c;
+  min-width: 350px;
   min-height: 460px;
   border-radius: 15px;
-  margin: 10px;
+  margin: 22px;
 }
 
 .item-details {
@@ -102,4 +107,8 @@ th {
 
 td {
   text-align: center;
+}
+
+.form-search {
+  display: flex;
 }

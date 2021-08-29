@@ -201,8 +201,8 @@ body {
 .images {
   display: flex;
   flex-direction: row;
-  height: 200px;
-  width: 300px;
+  height: 230px;
+  width: 350px;
   overflow-x: auto;
   overflow-y: hidden; }
 
@@ -230,7 +230,7 @@ body {
 
 .house-image {
   margin-right: 4px;
-  height: 180px;
+  height: 220px;
   width: 300px; }
 
 header {
@@ -253,8 +253,12 @@ header {
   margin: 5px;
   list-style: none; }
 
+.content {
+  background-color: #f7f7f7; }
+
 .house-main {
   padding: 1rem;
+  justify-content: center;
   display: flex;
   background-color: #f7f7f7;
   flex-wrap: wrap;
@@ -263,11 +267,12 @@ header {
 .item {
   background-color: white;
   overflow: hidden;
-  box-shadow: 1px 1px 10px #00000069;
-  min-width: 300px;
+  overflow: hidden;
+  box-shadow: 5px 1px 10px #0000005c;
+  min-width: 350px;
   min-height: 460px;
   border-radius: 15px;
-  margin: 10px; }
+  margin: 22px; }
 
 .item-details {
   margin-top: 10px;
@@ -324,3 +329,14 @@ th {
 
 td {
   text-align: center; }
+
+.form-search {
+  display: flex; }
+
+.hero {
+  height: 300px;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 0 100%);
+  background-image: linear-gradient(to right bottom, rgba(0, 79, 148, 0.769), rgba(0, 4, 41, 0.767)), url(../../img/background.jpg); }
+
+.hero img {
+  width: 100%; }
