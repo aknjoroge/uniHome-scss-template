@@ -32,6 +32,7 @@
 /* Handle on hover */
 .images::-webkit-scrollbar-thumb:hover {
   background: rgb(37, 37, 37);
+  cursor: pointer;
 }
 
 .house-image {

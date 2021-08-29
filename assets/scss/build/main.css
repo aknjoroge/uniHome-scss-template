@@ -171,6 +171,10 @@ body {
     color: white; }
     .btn--green::after {
       background-color: #7ed56f; }
+  .btn--plain {
+    color: white; }
+  .btn--plain:hover {
+    color: #7ed56f; }
 
 .nav-link-item {
   display: inline-block;
@@ -226,7 +230,8 @@ body {
 
 /* Handle on hover */
 .images::-webkit-scrollbar-thumb:hover {
-  background: #252525; }
+  background: #252525;
+  cursor: pointer; }
 
 .house-image {
   margin-right: 4px;
@@ -267,7 +272,7 @@ header {
 .item {
   background-color: white;
   overflow: hidden;
-  overflow: hidden;
+  position: relative;
   box-shadow: 5px 1px 10px #0000005c;
   min-width: 350px;
   min-height: 460px;
@@ -334,9 +339,50 @@ td {
   display: flex; }
 
 .hero {
-  height: 300px;
+  height: 410px;
   clip-path: polygon(0 0, 100% 0, 100% 53%, 0 100%);
   background-image: linear-gradient(to right bottom, rgba(0, 79, 148, 0.769), rgba(0, 4, 41, 0.767)), url(../../img/background.jpg); }
 
 .hero img {
   width: 100%; }
+
+.holder {
+  padding: 3px;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.details-name {
+  background-color: white;
+  color: #000000b8;
+  padding: 1rem;
+  font-weight: 400;
+  border-radius: 10px;
+  transition: all 0.4s;
+  min-width: 7rem; }
+
+.details-name:hover {
+  transform: scale(1.1);
+  color: #7ed56f; }
+
+.hero-details {
+  color: white;
+  opacity: 0.9;
+  font-weight: 400;
+  display: flex; }
+
+.banner {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  padding: 1.5rem;
+  background-image: linear-gradient(to right bottom, rgba(0, 79, 148, 0.769), rgba(0, 4, 41, 0.767)), url(../../img/background.jpg);
+  border-radius: 100%;
+  z-index: 1000;
+  transform: translateX(166px); }
+
+.banner-txt {
+  color: white;
+  transform: translateY(3px) translateX(-5px); }

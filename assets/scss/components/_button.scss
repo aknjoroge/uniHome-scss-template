@@ -40,6 +40,12 @@
       background-color: $color_green;
     }
   }
+  &--plain {
+    color: $color_white;
+  }
+  &--plain:hover {
+    color: $color_green;
+  }
 }
 
 .nav-link-item {
