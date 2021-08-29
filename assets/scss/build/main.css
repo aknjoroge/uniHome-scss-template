@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "font-import";
+  src: url("./../../fonts/Metropolis-Medium.otf"); }
+
+@keyframes btnservices {
+  0% {
+    transform: translateY(40rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1; } }
+
+.login {
+  background-color: #d2d6de; }
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  justify-content: center;
+  margin-top: 20px; }
+
+.login-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; }
+
+form input {
+  margin: 1rem; }
+
+.form_group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+hr {
+  margin-top: 20px; }
+
+input:focus {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid black; }
+
+.inputfield {
+  transition: all 0.2s;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 200px;
+  border: 0; }
+
+* {
+  margin: 0;
+  font-family: "font-import"; }
+
+.card {
+  background-color: white;
+  width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.651); }
+
+/*the :hover or :link is called pseudo clases they define an element state */
+.btn {
+  margin: 0;
+  margin-top: 10px;
+  border: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.438); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.4);
+      opacity: 0; }
+    .btn:hover:active {
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.274); }
+  .btn--blue {
+    background-color: #00a7d0;
+    color: white; }
+    .btn--blue::after {
+      background-color: #00a7d0; }

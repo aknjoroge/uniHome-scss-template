@@ -1,0 +1,28 @@
+{
+  "name": "unihome-web-template",
+  "version": "1.0.0",
+  "description": "university online booking system",
+  "main": "index.js",
+  "scripts": {
+    "build-fonts": "purgecss --css assets/font-awesome/css/fontawesome-all.min.css --content index.html --output assets/build",
+    "build-style": "purgecss --css assets/css/style.css --content developmentMarkUp.html assets/js/custom.js --output assets/build",
+    "build-bs4": "purgecss --css assets/bootstrap/css/bootstrap.min.css --content developmentMarkUp.html --output assets/build",
+    "build-sass": "node-sass assets/scss/main.scss  assets/scss/build/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aknjoroge/uniHome-WebTemplate.git"
+  },
+  "author": "Alexander karanja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aknjoroge/uniHome-WebTemplate/issues"
+  },
+  "homepage": "https://github.com/aknjoroge/uniHome-WebTemplate#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "purgecss": "^4.0.3"
+  }
+}

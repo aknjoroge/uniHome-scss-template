@@ -1,0 +1,36 @@
+/*the :hover or :link is called pseudo clases they define an element state */
+
+.btn {
+  margin: 0;
+  margin-top: 10px;
+  border: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-decoration: none;
+
+  border-radius: 1rem;
+  transition: all 0.3s;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.438);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.4);
+      opacity: 0;
+    }
+    &:active {
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.274);
+    }
+  }
+  &--blue {
+    background-color: $color_blue;
+    color: $color_white;
+    &::after {
+      background-color: $color_blue;
+    }
+  }
+}
