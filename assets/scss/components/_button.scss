@@ -8,7 +8,7 @@
   display: inline-block;
   text-decoration: none;
 
-  border-radius: 1rem;
+  border-radius: 5px;
   transition: all 0.3s;
   font-weight: 400;
   font-size: 16px;
@@ -40,4 +40,35 @@
       background-color: $color_green;
     }
   }
+}
+
+.nav-link-item {
+}
+
+.nav-link-item {
+  display: inline-block;
+  /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
+  the media queries only apply to screens
+  */
+}
+.nav-link-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.nav-link-item:link,
+.nav-link-item:visited {
+  padding: 12px;
+  color: #777;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  background-color: #333;
+}
+.nav-link-item:hover,
+.nav-link-item:active {
+  color: #7ed56f;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  transform: rotate(5deg) scale(1.3);
 }

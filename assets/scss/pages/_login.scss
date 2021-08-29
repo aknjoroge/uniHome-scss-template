@@ -1,5 +1,12 @@
-.login {
-  background-color: #d2d6de;
+// .login {
+//    background-color: #d2d6de;
+// }
+.loginbody {
+  background-image: url("../../../assets/img/background.jpg");
+  //background-color: #d2d6de;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .form-container {
   display: flex;
@@ -47,7 +54,7 @@ input::placeholder {
 .inputfield {
   background-color: rgb(184, 183, 183);
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 200px;
   border: 0;
 }
@@ -78,6 +85,7 @@ input::placeholder {
 
 .menu {
   margin-top: 10px;
+  font-size: 15px;
 }
 
 .copyright {
