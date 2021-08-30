@@ -43,8 +43,12 @@ header {
   min-height: 460px;
   border-radius: 15px;
   margin: 22px;
+  transition: all 0.5s;
 }
-
+.item:hover {
+  box-shadow: 5px 1px 36px #000000a1;
+  transform: scale(1.01);
+}
 .item-details {
   margin-top: 10px;
   text-align: -webkit-center;
@@ -111,4 +115,7 @@ td {
 
 .form-search {
   display: flex;
+}
+.search--input {
+  border: 0px;
 }

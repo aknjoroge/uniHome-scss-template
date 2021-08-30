@@ -2,9 +2,9 @@
 //    background-color: #d2d6de;
 // }
 .loginbody {
-  background-image: url("../../../assets/img/background.jpg");
-  //background-color: #d2d6de;
-  padding: 1rem;
+  // background-image: url("../../../assets/img/background.jpg");
+  background-color: #f7f7f7;
+
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,8 +19,9 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   height: 100vh;
+  padding: 2rem;
 }
 form input {
   margin: 12px;
@@ -40,6 +41,7 @@ hr {
 }
 input {
   transition: all 0.1s;
+  border-bottom: 2px transparent;
 }
 input:focus {
   outline: none;
@@ -53,10 +55,12 @@ input::placeholder {
 
 .inputfield {
   background-color: rgb(184, 183, 183);
-  padding: 10px 10px;
+  padding: 15px 22px;
   border-radius: 5px;
   width: 200px;
-  border: 0;
+  border: none;
+  border-bottom: 2px transparent;
+  border-top: 2px transparent;
 }
 
 .logintitle {
@@ -68,6 +72,7 @@ input::placeholder {
   text-decoration: none;
   color: red;
   transition: all 0.2s;
+  font-size: 13px;
 }
 .forgot:hover {
   color: black;
@@ -77,6 +82,7 @@ input::placeholder {
   text-decoration: none;
   color: green;
   transition: all 0.2s;
+  font-size: 13px;
 }
 
 .signup:hover {
