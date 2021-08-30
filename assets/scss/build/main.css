@@ -454,7 +454,8 @@ td {
 
 .details-content-media {
   display: flex;
-  padding: 1rem; }
+  padding: 1rem;
+  justify-content: center; }
 
 #map {
   height: 321px;
@@ -467,13 +468,12 @@ td {
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 170px; }
 
 .booking-card {
   background-color: white;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.651);
-  padding: 3rem;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.212);
+  padding: 2rem;
   width: 34rem;
   border-radius: 10px; }
 
@@ -522,6 +522,21 @@ td {
 .rating-add {
   text-decoration: none;
   margin-top: 20px; }
+
+.call {
+  font-family: sans-serif;
+  font-weight: 200; }
+
+.booking-info {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  line-height: 27px; }
+
+.hero-call {
+  height: 410px;
+  background-image: linear-gradient(to right bottom, rgba(0, 79, 148, 0.769), rgba(0, 4, 41, 0.767)), url(../../img/background.jpg); }
 
 .banner {
   width: 20px;
