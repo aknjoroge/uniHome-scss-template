@@ -429,7 +429,6 @@ td {
 
 .media {
   flex-wrap: wrap;
-  max-width: 36rem;
   min-width: 36rem;
   padding: 2rem;
   display: flex; }
@@ -457,7 +456,7 @@ td {
   display: flex;
   padding: 1rem; }
 
-.map {
+#map {
   height: 321px;
   overflow: hidden; }
 
@@ -513,11 +512,16 @@ td {
 
 .owner-dp {
   background-color: red;
-  border-radius: 100%; }
+  border-radius: 100%;
+  margin: 10px; }
 
 .info-owner {
   display: flex;
   align-items: center; }
+
+.rating-add {
+  text-decoration: none;
+  margin-top: 20px; }
 
 .banner {
   width: 20px;
