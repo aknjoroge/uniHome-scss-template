@@ -58,7 +58,7 @@ input::placeholder {
   color: #999; }
 
 .inputfield {
-  background-color: #b8b7b7;
+  background-color: #f2f2f2;
   padding: 15px 22px;
   border-radius: 5px;
   width: 200px;
@@ -156,7 +156,8 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.651); }
+  transition: all 0.3s;
+  box-shadow: 0px 5px 30px rgba(32, 32, 32, 0.397); }
 
 /*the :hover or :link is called pseudo clases they define an element state */
 .btn {
@@ -207,7 +208,7 @@ body::-webkit-scrollbar-thumb:hover {
 .nav-link-item:link,
 .nav-link-item:visited {
   padding: 12px;
-  color: #777;
+  color: #b1a8a8;
   text-decoration: none;
   display: inline-block;
   border-radius: 3px;
@@ -341,7 +342,7 @@ th {
   padding: 5px; }
 
 .details-table tr:nth-child(even) {
-  background-color: #dddddd; }
+  background-color: #ffeeee; }
 
 .item-loc {
   opacity: 0.7; }
@@ -409,7 +410,6 @@ td {
 .details {
   border-radius: 10px;
   min-width: 36rem;
-  background-color: #f7f7f7;
   padding: 2rem; }
 
 .detail-list-item {
@@ -417,8 +417,15 @@ td {
   margin-top: 10px; }
 
 .description {
-  background-color: white;
-  padding: 2rem; }
+  background-color: #f7f7f7;
+  padding: 2rem;
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  transition: all 0.5s; }
+
+.description:hover {
+  box-shadow: 1px 8px 20px #0000001f; }
 
 .media {
   flex-wrap: wrap;
@@ -431,7 +438,14 @@ td {
   border-radius: 10px;
   background-color: #f7f7f7;
   padding: 2rem;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s; }
+
+.house-info:hover {
+  box-shadow: 1px 8px 20px #0000001f; }
 
 .black {
   color: black; }
@@ -464,6 +478,47 @@ td {
   width: 34rem;
   border-radius: 10px; }
 
+.detail-table-list {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #7ed56f;
+  font-weight: 400; }
+
+.detail-table-list-xl {
+  font-family: sans-serif; }
+
+.detail-headings {
+  margin: 1rem; }
+
+.detail-section p {
+  font-family: sans-serif;
+  letter-spacing: 1.1px;
+  line-height: 25px; }
+
+.detail-section h3 {
+  margin-bottom: 10px;
+  font-weight: 200; }
+
+.details-terms-sec ol li {
+  font-family: sans-serif;
+  letter-spacing: 1.1px;
+  line-height: 25px; }
+
+.details-terms-sec {
+  font-family: sans-serif !important; }
+
+.details-terms-sec h3 {
+  margin-bottom: 10px;
+  font-weight: 200; }
+
+.owner-dp {
+  background-color: red;
+  border-radius: 100%; }
+
+.info-owner {
+  display: flex;
+  align-items: center; }
+
 .banner {
   width: 20px;
   height: 20px;
@@ -488,7 +543,7 @@ footer {
 .footer-link-item:link,
 .footer-link-item:visited {
   padding: 12px;
-  color: #777;
+  color: #b1a8a8;
   text-decoration: none;
   display: inline-block;
   border-radius: 3px;
@@ -499,6 +554,30 @@ footer {
 .footer-link-item:active {
   color: #7ed56f;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4); }
+
+.naviagtion-footer {
+  align-items: flex-start;
+  display: flex; }
+
+.creater {
+  margin: 8px;
+  justify-content: space-evenly;
+  display: flex;
+  border-top: 1px solid;
+  padding-top: 1rem;
+  transition: all 0.4s;
+  cursor: pointer; }
+
+.creater:hover {
+  color: #7ed56f; }
+
+.sitemap-link {
+  text-decoration: none;
+  color: #949292;
+  transition: all 0.2s; }
+
+.sitemap-link:hover {
+  color: #dfdfdf; }
 
 .sidepanel {
   width: 28rem;
