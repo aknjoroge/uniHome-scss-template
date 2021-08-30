@@ -2,6 +2,16 @@ header {
   // background-color: rgb(230, 222, 222);
   box-shadow: 1px 1px 10px #00000069;
   background-color: #444;
+
+  // background: linear-gradient(37deg, #1d4cf8, #030615);
+}
+.header-custom {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 79, 148, 0.769),
+      rgba(0, 4, 41, 0.767)
+    ),
+    url(../../img/background.jpg);
 }
 .navbar-list {
   justify-content: space-between;

@@ -1,0 +1,20 @@
+.banner {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  padding: 1.5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 79, 148, 0.769),
+      rgba(0, 4, 41, 0.767)
+    ),
+    url(../../img/background.jpg);
+  border-radius: 100%;
+  z-index: 1000;
+  transform: translateX(166px);
+}
+
+.banner-txt {
+  color: white;
+  transform: translateY(3px) translateX(-5px);
+}
