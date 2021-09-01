@@ -1,0 +1,31 @@
+.owner-dash-item {
+  background-color: white;
+
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 1px 10px #0000005c;
+  min-width: 350px;
+  min-height: 204px;
+  border-radius: 15px;
+  margin: 22px;
+  transition: all 0.5s;
+}
+
+.owner-dash-item:hover {
+  box-shadow: 5px 1px 36px #00000034;
+  transform: scale(1.01);
+}
+.owner-item-body {
+  padding: 1rem;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+  box-shadow: 7px 6px 20px rgba(0, 0, 0, 0.185);
+}
+.owner-item-body:hover {
+  color: #59994e;
+}

@@ -37,7 +37,7 @@ header {
 .house-main {
   padding: 1rem;
   // justify-content: space-around;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   background-color: #f7f7f7;
   flex-wrap: wrap;
@@ -128,4 +128,139 @@ td {
 }
 .search--input {
   border: 0px;
+}
+.home-hero {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 327px;
+  margin: 1rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 79, 148, 0.769),
+      rgba(0, 4, 41, 0.767)
+    ),
+    url(../../img/background.jpg);
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-hero h3 {
+  color: white;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-align: center;
+}
+.home-hero p {
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 10px;
+  font-weight: 200;
+}
+.hero-search {
+  background-color: #7ed56f;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.hero-search:hover {
+  transform: scale(1.1);
+}
+
+.page-section {
+  flex-direction: row;
+  padding: 10px;
+  display: flex;
+}
+
+.home-sidepanel {
+  background: white;
+  padding: 2rem;
+  margin: 1rem;
+  max-height: 265px;
+  min-height: 215px;
+  box-shadow: 2px 2px 8px #00000029;
+  margin-left: 10px;
+  min-width: 186px;
+  border-radius: 10px;
+}
+
+.home-sidepanel h3 {
+  text-align: center;
+  color: #7ed56f;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.side-location {
+  border-top: 1px solid;
+  line-height: 33px;
+  margin-top: 12px;
+  list-style: circle;
+  font-weight: 300;
+  padding-top: 22px;
+}
+.more {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px #00000030;
+  width: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  align-items: center;
+  margin: 12px;
+  align-self: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.more:hover {
+  transform: translateX(1.1);
+  box-shadow: 2px 2px 6px #0000005d;
+}
+.holder-title {
+  margin: 10px;
+  color: #7ed56f;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.home-sidepanel-two h3 {
+  text-align: center;
+  color: #7ed56f;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.home-sidepanel-two {
+  background: white;
+  padding: 2rem;
+  margin: 1rem;
+  max-height: 265px;
+  // min-height: 215px;
+  box-shadow: 2px 2px 8px #00000029;
+  margin-left: 10px;
+  min-width: 186px;
+  border-radius: 10px;
+}
+.home-sidepanel-two a {
+  text-decoration: none;
+  margin-top: 18px;
+  transition: all 0.2s;
+}
+.home-sidepanel-two a:hover {
+  color: black;
+}
+.pagination {
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+}
+.pagination a {
+  margin-left: 10px;
+}
+
+.pagin {
+  display: flex;
 }
