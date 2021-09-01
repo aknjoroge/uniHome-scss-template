@@ -1,20 +1,31 @@
 .banner {
+  padding: 1rem;
+  background-color: red;
   width: 20px;
-  height: 20px;
   position: absolute;
-  padding: 1.5rem;
+  height: 20px;
+  transform: translateY(-63px) translateX(122px);
+  border-radius: 100%;
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 79, 148, 0.769),
       rgba(0, 4, 41, 0.767)
     ),
     url(../../img/background.jpg);
-  border-radius: 100%;
-  z-index: 1000;
-  transform: translateX(166px);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  //   width: 20px;
+  //   height: 20px;
+  //   position: absolute;
+  //   padding: 1.5rem;
+  //   border-radius: 100%;
+  //   z-index: 1000;
+  //   transform: translateX(166px);
 }
 
 .banner-txt {
-  color: white;
-  transform: translateY(3px) translateX(-5px);
+  // color: white;
+  // transform: translateY(3px) translateX(-5px);
 }
