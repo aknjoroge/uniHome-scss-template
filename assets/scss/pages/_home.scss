@@ -89,8 +89,8 @@ header {
 }
 .details-table {
   border-collapse: collapse;
-
   padding: 10px;
+  transition: all 0.3s;
   border-radius: 5px;
 }
 .details-table td,
@@ -255,6 +255,7 @@ td {
   justify-content: center;
   text-align: center;
   padding: 5px;
+  background-color: white;
   display: flex;
 }
 .pagination a {
@@ -263,4 +264,11 @@ td {
 
 .pagin {
   display: flex;
+}
+
+.mgr {
+  margin-right: 10px;
+}
+.mgl {
+  margin-left: 10px;
 }
