@@ -1,14 +1,23 @@
 .images {
   display: flex;
   flex-direction: row;
-  height: 230px;
+  height: 207px;
+  // height: 230px;
   width: 350px;
   overflow-x: auto;
   overflow-y: hidden;
 }
 .images:hover ~ .item-details .item-name {
   color: #ffffff;
-  background-color: #ffffff9c;
+  background-color: #0000009c;
+  // color: #ffffff;
+  // background-color: #ffffff9c;
+}
+.images:hover ~ .item-details .item-name .item-location-details .home-svg {
+  fill: white;
+
+  // color: #ffffff;
+  // background-color: #ffffff9c;
 }
 
 .images::-webkit-scrollbar {

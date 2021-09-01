@@ -57,10 +57,7 @@
 .name-form {
   padding: 2rem;
 }
-.profile-image {
-  position: absolute;
-  transform: translateY(93px) translateX(100px);
-}
+
 .naviagtion-pofile {
   display: flex;
   flex-direction: column;
@@ -194,4 +191,20 @@
 }
 .booking-street {
   margin-left: 18px;
+}
+.qrcode {
+  text-align: center;
+}
+.share {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.share:hover {
+  color: #7ed56f;
+}
+.profile-svg {
+  transition: all 0.3s;
+}
+.profile-svg:hover {
+  color: #7ed56f;
 }
