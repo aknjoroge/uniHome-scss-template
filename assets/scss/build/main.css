@@ -272,7 +272,8 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   color: #000000;
   box-shadow: 1px 3px 4px #00000078;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1000; }
 
 .next {
   width: 45px;
@@ -287,7 +288,8 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   color: #000000;
   box-shadow: 1px 3px 4px #00000078;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1000; }
 
 /*
 .images:hover ~ .item-details .item-name {
@@ -715,6 +717,18 @@ td {
 
 .bed-no svg {
   margin-right: 7px; }
+
+.listbed {
+  margin-top: 10px;
+  list-style: circle; }
+
+.listbed li {
+  margin-top: 4px; }
+
+.img-array {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s; }
 
 .hero {
   height: 430px;

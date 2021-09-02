@@ -60,4 +60,3 @@ window.addEventListener("load", function () {
     }, 1500);
   }
 });
-console.log("hi");

@@ -21,6 +21,7 @@
   color: #000000;
   box-shadow: 1px 3px 4px #00000078;
   cursor: pointer;
+  z-index: 1000;
 }
 .next {
   width: 45px;
@@ -36,6 +37,7 @@
   color: #000000;
   box-shadow: 1px 3px 4px #00000078;
   cursor: pointer;
+  z-index: 1000;
 }
 /*
 .images:hover ~ .item-details .item-name {

@@ -419,3 +419,15 @@ td {
 .bed-no svg {
   margin-right: 7px;
 }
+.listbed {
+  margin-top: 10px;
+  list-style: circle;
+}
+.listbed li {
+  margin-top: 4px;
+}
+.img-array {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s;
+}
