@@ -142,6 +142,21 @@ input::placeholder {
   font-weight: 400;
   margin-bottom: 5px; }
 
+.modal-login {
+  position: absolute;
+  width: 100%; }
+
+.login-card {
+  z-index: 1000; }
+
+.close {
+  text-align: right;
+  color: red;
+  margin-bottom: 2px; }
+
+.close-modal-btn:hover {
+  cursor: pointer; }
+
 * {
   margin: 0;
   font-family: "font-import"; }
@@ -301,7 +316,8 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: white;
+  display: none; }
 
 .preloader p {
   font-size: 16px;
@@ -660,6 +676,45 @@ td {
 
 .add-image {
   width: 200px; }
+
+.user-header-dp img {
+  height: 50px;
+  margin-right: 11px;
+  width: 50px;
+  border-radius: 50%; }
+
+.user-header-dp {
+  width: 200px;
+  align-items: center;
+  display: flex;
+  padding: 4px;
+  /* background-color: red; */
+  border-radius: 32px;
+  transition: all 0.3s; }
+
+.user-header-dp h3 {
+  font-weight: 100; }
+
+.user-header-dp:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.438);
+  color: #ffffffde;
+  cursor: pointer; }
+
+.users {
+  display: flex;
+  align-items: center; }
+
+.bed-no {
+  font-weight: 100;
+  margin-top: 12px;
+  margin-left: 5px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center; }
+
+.bed-no svg {
+  margin-right: 7px; }
 
 .hero {
   height: 430px;
@@ -1109,3 +1164,28 @@ footer {
 
 .profile-svg:hover {
   color: #7ed56f; }
+
+.locations {
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row; }
+
+.locations::-webkit-scrollbar {
+  width: 20px;
+  height: 10px; }
+
+/* Track */
+.locations::-webkit-scrollbar-track {
+  border-radius: 5px;
+  border: 1px solid #0000002b; }
+
+/* Handle */
+.locations::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px; }
+
+/* Handle on hover */
+.locations::-webkit-scrollbar-thumb:hover {
+  background: #252525;
+  cursor: pointer; }

@@ -136,3 +136,18 @@ input::placeholder {
   font-weight: 400;
   margin-bottom: 5px;
 }
+.modal-login {
+  position: absolute;
+  width: 100%;
+}
+.login-card {
+  z-index: 1000;
+}
+.close {
+  text-align: right;
+  color: red;
+  margin-bottom: 2px;
+}
+.close-modal-btn:hover {
+  cursor: pointer;
+}
