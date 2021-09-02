@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   transition: all 0.3s;
-  box-shadow: 7px 6px 20px rgba(0, 0, 0, 0.185);
+  box-shadow: 7px 6px 20px rgba(51, 50, 50, 0.041);
 }
 .owner-item-body:hover {
   color: #59994e;

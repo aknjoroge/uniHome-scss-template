@@ -6,64 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unihome</title>
     <link rel="stylesheet" href="./../assets/scss/build/main.css" />
+    <script defer src="../assets/js/main.js"></script>
   </head>
   <body>
-    <header class="header-custom">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion">
-            <li class="navlist">
 
-              <li class="navlist"> <a href="home.html">
-                <img
-                  class="home-logo"
-                  src="../assets/img/logo.png"
-                  alt=""
-                  srcset=""
-                />
-              </a></li>
-              <a class="nav-link-item" href="#"> Available houses</a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="#">House Locations</a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="#">Estates</a>
-            </li>
+       <!--Start of preloader-->
+       <div class="preloader profile-page">
+        <div class="loader">
+         <div>
+        <svg  class="preloader-icon"  xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+          <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+        </svg>
+      </div>
+          <h3 class="light text-title" >Loading Profile...</h3>
+          <div class="text-container">
+            <div class="text"></div>
           </div>
-          <div>
+          <p class="loader-ask">Please wait </p>
+        </div>
+      </div>
+  <!--End of preloader-->
+  <header class="header-custom">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <div class="naviagtion">
+          <li class="navlist">
+
+            <li class="navlist"> <a href="home.html">
+              <img
+                class="home-logo"
+                src="../assets/img/logo.png"
+                alt=""
+                srcset=""
+              />
+            </a></li>
+            <a class="nav-link-item" href="myhouse.html"> My houses</a>
+          </li>
+          <li class="navlist">
+            <a class="nav-link-item" href="#">Add a House </a>
+          </li>
+          <li class="navlist">
+            <a class="nav-link-item" href="bookings.html">Bookings </a>
+          </li>
+          <li class="navlist">
+            <a class="nav-link-item" href="bills.html">Bills </a>
+          </li>
           
-              <form class="form-search"> 
-                <div  >
-                  
-                  <input
-                    class="inputfield"
-                    placeholder="location"
-                    type="text"
-                    name="searc"
-                    id=""
-                    required
-                  />
-                </div>
-                 
-                <div class="form_group-input">
-                  <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                  </a>
-                  
-                </div>
+        </div>
+    
+        <div class="users">
+          <a class="btn" href="#">Mary doe</a>
 
-               </form>
-          </div>
-          <div class="users">
-            <a class="btn btn--blue" href="#">Login</a>
-
-          </div>
-        </ul>
-      </nav>
-    </header>
+        </div>
+      </ul>
+    </nav>
+  </header>
 
 <div class="profile-content">
   <div class="sidepanel">
@@ -71,6 +68,14 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <div class="naviagtion-pofile">
+           
+            <div>
+              <svg class="profile-svg" xmlns="http://www.w3.org/2000/svg" width="106" height="106" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </div>
+
             <li class="navlist">
             
             <br>
@@ -80,16 +85,16 @@
              
               <br>
               <br>
-              <a class="nav-link-item bg-black" href="#"> My Booking</a>
+              <a class="nav-link-item bg-black" href="myhouse.html"> My Booking</a>
             </li>
             <li class="navlist">
-              <a class="nav-link-item bg-black" href="#">Request a Refund</a>
+              <a class="nav-link-item bg-black" href="#">Bookmarked houses</a>
             </li>
             <li class="navlist">
               <a class="nav-link-item bg-black" href="#">Receits</a>
             </li>
             <li class="navlist">
-              <a class="nav-link-item bg-black" href="#">My house Rules</a>
+              <a class="nav-link-item bg-black" href="myhouse.html#rules">My house Rules</a>
             </li>
           </div>
           <div>
@@ -98,40 +103,72 @@
           </div>
           
         </ul>
+        <br>
+        <div class="  mglxl">
+
+<a class="share" href="#">
+  <p>Share and get 10% discount   </p>
+<p>on future bookings  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+</svg></p>
+</a>
+
+         </div>
       </nav>
-      <h3>QR code for sharing</h3>
     </div>
   </div>
   <div class="panel">
     <div class="content-profile ">
       <p class="password-section"> Account Update</p>
       <div class="profile">
-        <img class="profile-image"
-        src="../assets/img/logo.png"
-        alt=""
-        srcset=""
-      />
+    
       
       <form class="name-form" >
         <div class="profile-form" >
-          <label>Name</label>
-          <input
-            class="inputfield"
-            placeholder="John doe"
-            type="text"
-       
-            id=""
-            required
-          />
-          <label>Email</label>
-          <input
-            class="inputfield"
-            placeholder="you@example.com"
-            type="email"
-            name="email"
-            id=""
-            required
-          />
+          <div>
+            
+            <label>Name</label>
+            <input
+              class="inputfield"
+              placeholder="John doe"
+              type="text"
+         
+              id=""
+              required
+            />
+            <label>Email</label>
+            <input
+              class="inputfield"
+              placeholder="you@example.com"
+              type="email"
+              name="email"
+              id=""
+              required
+            />
+          </div>
+          <div>
+            
+            <label>Phone</label>
+            <input
+              class="inputfield"
+              placeholder="07100000000"
+              type="number"
+         
+              id=""
+              required
+            />
+            <label>ID no</label>
+            <input
+              class="inputfield"
+              placeholder="377xxxx"
+              type="number"
+              name="idno"
+              id=""
+              required
+            />
+          </div>
+         
+
           <div class="form_group-input">
             <input class="btn btn--blue" type="submit" value="update " />
           </div>

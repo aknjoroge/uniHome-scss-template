@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unihome-Login</title>
     <link rel="stylesheet" href="./../assets/scss/build/main.css" />
+  <script defer src="../assets/js/ownerslogin.js"></script>
   </head>
   <body>
     <header class="header-custom">
@@ -22,23 +23,28 @@
     </header>
     <div class="loginbody">
       <div class="login">
-        <div class="modal hidden ">
+        <div class="modal modal-login hidden">
           <div class="backdrop">
+          </div>
             <div class="forgot-password">
-              <div class="card">
+              <div class="card login-card">
+                <div class="close">
+                  <svg  class="close-modal-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                </svg></div>
                 <h3 class="reset-title">Get reset link</h3>
-                
-                <form action="">
+
+                <form id="resetForm">
                   <div class="form_group">
-                    <label>ID number</label>
+                    <label>Email</label>
                     <input
-                    class="inputfield"
-                    placeholder="31xxxxx"
-                    type="text"
-                    name="idno"
-                    id=""
-                    required
-                  />
+                      class="inputfield"
+                      placeholder="you@example.com"
+                      type="email"
+                      name="email"
+                      id=""
+                      required
+                    />
                   </div>
                   <div class="form_group-input">
                     <input class="btn btn--green" type="submit" value="Reset" />
@@ -46,8 +52,9 @@
                 </form>
               </div>
             </div>
-          </div>
+         
         </div>
+
         <main class="login-container">
           <div class="card">
        <a href="home.html">     <img
@@ -65,7 +72,7 @@
             <h3 class="logintitle">Home Owner Login </h3>
             <hr />
             <div class="form-container">
-              <form>
+              <form id="owners-login-form">
                 <div class="form_group">
                   <label>ID no</label>
                   <input
@@ -96,7 +103,7 @@
               </form>
             <hr />
             <div class="form_group menu">
-              <a class="forgot" href="#">Forgot password</a>
+              <a id="forgot-pass-btn"  class="forgot" href="#">Forgot password</a>
             
             </div>
              

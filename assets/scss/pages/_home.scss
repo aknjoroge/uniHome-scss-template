@@ -91,14 +91,6 @@ header {
   transform: translateY(-2px);
 }
 /*
-//Start of OLD
-
-
-
-
-
-//End of OLD
-
 */
 
 // .item-name:hover {
@@ -430,4 +422,14 @@ td {
   display: flex;
   flex-direction: row;
   transition: all 0.5s;
+}
+.full-length {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.owner-home-container {
+  display: flex;
+  text-align: center;
+  height: 164px;
 }
