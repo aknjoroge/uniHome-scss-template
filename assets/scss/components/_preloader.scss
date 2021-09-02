@@ -1,0 +1,50 @@
+.preloader {
+  position: fixed;
+  display: flex;
+  z-index: 100000;
+  background: #7ed56f;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.preloader p {
+  font-size: 16px;
+  opacity: 0.9;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  color: #5f4141;
+}
+
+.preloader h3 {
+  font-family: sans-serif;
+  letter-spacing: 3.2px;
+  font-weight: 100;
+}
+
+.loader {
+  font-size: 27px;
+  line-height: 59px;
+  font-weight: 400;
+  text-align: center;
+  font-family: sans-serif;
+}
+.preloader-icon {
+  animation: preloaders 7s ease-in;
+  animation-iteration-count: infinite;
+}
+
+.text {
+  width: 297px;
+  height: 3px;
+  background-color: white;
+  animation: preloadertext 3s ease-in;
+  animation-iteration-count: infinite;
+}
+.text-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}

@@ -8,3 +8,25 @@
     opacity: 1;
   }
 }
+@keyframes preloaders {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloadertext {
+  0% {
+    width: 297px;
+  }
+  50% {
+    width: 27px;
+  }
+
+  100% {
+    width: 297px;
+  }
+}
