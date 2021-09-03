@@ -53,24 +53,32 @@
           <div class="content-profile ">
 
             <div class="available">
-
-                <p class="password-section"> Manual Booking</p>
+                
+                <p class="password-section"> House Upload</p>
            
                 <div class="manual-option">
 
-                  <h3> <label for="">House Available</label></h3>
-                <select class="inputfield" name="" id="">
-                    <option value="">True</option>
-                    <option value="">False</option>
-                </select>
-                <p>This will Enable or Disable the house, leave it to true if no one has booked it </p>
-                </div>
+                  <h3> <label for="">Add a new House  </label></h3>
+                
+                <label for="">Enter Your Id no</label>
+                <br>  <input
+                  class="inputfield"
+                  placeholder="37xxxx"
+                  type="number"
+             
+                  id=""
+                  required
+                />
+                <p>Your ID number is required for security reasons  </p>
+              
+                <p><a style="text-decoration: none;" href="#">Contact The Admin to get help about uploading</a></p>
+              </div>
 
 
             </div>
 
             <hr>
-            <p class="password-section"> Details Update</p>
+            <p class="password-section"> House Details</p>
             <div class="profile">
           
             
@@ -83,7 +91,7 @@
                   <label>Name</label>
                   <input
                     class="inputfield"
-                    placeholder="Pink house"
+                    placeholder="house"
                     type="text"
                
                     id=""
@@ -93,7 +101,7 @@
                   <label>Estate Name</label>
                   <input
                     class="inputfield"
-                    placeholder="John Adero"
+                    placeholder="  Adero"
                     type="text"
                     
                     id=""
@@ -113,18 +121,17 @@
                   />
                   <label>Location</label>
                 <select  class="inputfield" name="" >
+                    <option value="default">Select a location</option>
                     <option value="nyawitta">Nyawitta</option>
                     <option value="nyawitta">Across</option>
                     <option value="nyawitta">Mumias</option>
                     <option value="nyawitta">poster</option>
                 </select>
-                   
+                  
                 </div>
                
       
-                <div class="form_group-input">
-                  <input class="btn btn--blue" type="submit" value="update " />
-                </div>
+                <p><a style="text-decoration: none; " href="#">Register A new location?</a></p>
               </div>
               
             
@@ -148,24 +155,29 @@
   
                     <label>Shower</label>
                     <select  class="inputfield" name="" id="">
+                      
+                        <option value="default">Select an option</option>
                         <option value="not">Not Present</option>
                         <option value="present">  Present</option>
                     </select>
   
                     <label>Tiles</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="present">  Present</option>
+                      <option value="default">Select an option</option> 
+                      <option value="present">  Present</option>
                         <option value="not">Not Present</option>
                     </select>
                     <label>Tokens</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="not"> Unavailable</option>
+                      <option value="default">Select an option</option> 
+                      <option value="not"> Unavailable</option>
                         <option value="present">  available</option>
                     </select>
                   
                     <label>Ceiling</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="not">Not Present</option>
+                      <option value="default">Select an option</option> 
+                      <option value="not">Not Present</option>
                         <option value="present">  Present</option>
                     </select>
                   </div>
@@ -176,24 +188,28 @@
                     
                     <label>Beddings</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="not">Not Replaced</option>
+                      <option value="default">Select an option</option> 
+                      <option value="not">Not Replaced</option>
                         <option value="present">  Replaced</option>
                     </select>
                     
                     <label>Table</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="not">Not available</option>
+                      <option value="default">Select an option</option> 
+                      <option value="not">Not available</option>
                         <option value="present">  available</option>
                     </select>
                     <label>Chair</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="not">Not available</option>
+                      <option value="default">Select an option</option> 
+                      <option value="not">Not available</option>
                         <option value="present">  available</option>
                     </select>
   
                     <label>Discount</label>
                     <select  class="inputfield" name="" id="">
-                        <option value="not">No Discount</option>
+                      <option value="default">Select an option</option>  
+                      <option value="not">No Discount</option>
                         <option value="present">  20%</option>
                         <option value="present">  50%</option>
                         <option value="present">  70%</option>
@@ -206,9 +222,7 @@
                 
                   
               </div>
-              <div class="form_group-input">
-                <input class="btn btn--blue" type="submit" value="update " />
-              </div>
+               
                 
                
               
@@ -228,21 +242,20 @@
                     <p class="password-section"> House info</p>
                  <div  >
                    <br>
-                  <p class="password-section"> Description</p>
-                    
+                   
+                  <p class="password-section"> Description</p>                    
                     <textarea     name="" id="" cols="30" rows="10"></textarea>
-                     
+                  
                     <p class="password-section"> Terms and conditions info</p>
                     <textarea  name="" id="" cols="30" rows="10"></textarea>
-    
-                    <p class="password-section"> House Rules</p>
+                 
+                     
+                    <p class="password-section"> House Rules.  End each line with a Fullstop ( . )</p>
                     <textarea  name="" id="" cols="30" rows="10"></textarea>
     
 
                  </div>
-                 <div class="form_group-input">
-                    <input class="btn btn--blue" type="submit" value="update " />
-                  </div>
+                 
                 </form>
             </div>
              <hr>
@@ -253,37 +266,18 @@
 
                   <div >
                     <p>Compound</p>
-                    <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  />
+                   <input type="file">
                 </div>
                   <div> 
-                    <p>House Floor</p><img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  /></div>
+                    <p>House Floor</p><input type="file"></div>
 
                   <div>
-                    <p>House interior 1</p> <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  />
+                    <p>House interior 1</p> <input type="file">
                 </div>
                   <div>
                     <p>House interior 2</p>
-                    <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  /></div>
+                    <input type="file">
+                   </div>
                  
                   </div>
 
@@ -296,12 +290,21 @@
 
            
            <hr>
+           <div style="text-align: center;">
+            <img  
+            class="details-logo"
+            src="../assets/img/logo.png"
+            alt=""
+            srcset=""
+          />
+           </div>
+          
            <div class="house-btns">
-             <a class="btn btn--red" href="#">Delete House</a>
-             <a class="btn btn--green" href="#">Promote This House</a>
+           
+             <a class="btn btn--green" href="#">Upload This House</a>
              
             </div>
-            <p class="house-btn-text"  >Promote this house to reach more potential customers</p>
+            <p class="house-btn-text"  >Reach 2000 students </p>
          
            <!--End-->
 

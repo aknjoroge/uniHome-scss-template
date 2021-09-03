@@ -29,3 +29,95 @@
 .owner-item-body:hover {
   color: #59994e;
 }
+.manual-option {
+  padding: 1rem;
+  line-height: 55px;
+}
+select {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: blue;
+  border: none;
+}
+select:active,
+select:focus-visible {
+  border: none;
+  outline: none;
+}
+select option:active {
+  border: none;
+}
+textarea {
+  display: block;
+  margin-top: 15px;
+  width: 96%;
+  background-color: #f2f2f2;
+  padding: 15px 22px;
+  border-radius: 5px;
+
+  border: none;
+}
+textarea:active,
+textarea:focus,
+textarea:focus-visible {
+  outline-color: blue;
+  outline-style: dashed;
+  color: #3c2c2c;
+  font-size: 17px;
+}
+.description-section {
+  padding: 1rem;
+}
+.options-section {
+  line-height: 46px;
+  padding: 1rem;
+}
+.options-section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.media {
+  padding: 5px;
+  justify-content: space-around;
+}
+.media div {
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.media div:hover {
+  box-shadow: 5px 5px 10px rgba(163, 163, 163, 0.158);
+
+  cursor: pointer;
+}
+
+.media div p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.house-btns {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--red {
+  background-color: red;
+  color: white;
+  margin-right: 15px;
+}
+.house-btn-text {
+  text-align: center;
+  margin-top: 5px;
+  font-family: sans-serif;
+}
+.price-detail {
+  width: 44rem;
+}
+.users a {
+  color: white;
+}
