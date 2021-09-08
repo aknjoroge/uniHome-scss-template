@@ -4,7 +4,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 5px 1px 10px #0000005c;
-  min-width: 350px;
+  min-width: 250px;
   min-height: 204px;
   border-radius: 15px;
   margin: 22px;
@@ -117,9 +117,7 @@ textarea:focus-visible {
 }
 .price-detail {
   width: 44rem;
-  
 }
 .users a {
   color: white;
 }
-

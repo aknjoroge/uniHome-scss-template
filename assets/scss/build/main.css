@@ -1191,11 +1191,14 @@ footer {
   height: 42rem;
   min-width: 28rem;
   padding: 1rem; }
+  @media only screen and (max-width: 1200px) {
+    .sidepanel {
+      height: 13rem; } }
 
 .panel {
   padding: 1rem;
   width: 100%;
-  height: 42rem;
+  height: 47rem;
   /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
         the media queries only apply to screens
         */ }
@@ -1206,6 +1209,9 @@ footer {
 
 .profile-content {
   display: flex; }
+  @media only screen and (max-width: 1200px) {
+    .profile-content {
+      flex-direction: column; } }
   @media only screen and (max-width: 600px) {
     .profile-content {
       width: 42rem; } }
@@ -1219,9 +1225,14 @@ footer {
   /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
         the media queries only apply to screens
         */ }
+  @media only screen and (max-width: 1200px) {
+    .content-profile {
+      font-size: 14px;
+      width: 44%; } }
   @media only screen and (max-width: 900px) {
     .content-profile {
-      width: 95%; } }
+      font-size: 14px;
+      width: 44%; } }
 
 .available {
   /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
@@ -1245,7 +1256,33 @@ footer {
   padding: 1rem;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
+        the media queries only apply to screens
+        */ }
+  @media only screen and (max-width: 900px) {
+    .profile-form-password {
+      flex-direction: column;
+      width: 35%;
+      height: 23rem; } }
+
+.panel-long {
+  /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
+        the media queries only apply to screens
+        */ }
+  @media only screen and (max-width: 900px) {
+    .panel-long {
+      height: 60rem; } }
+
+.password-center {
+  /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
+        the media queries only apply to screens
+        */ }
+  @media only screen and (max-width: 900px) {
+    .password-center {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
 
 .new-pass {
   display: flex;
@@ -1346,6 +1383,9 @@ footer {
 .flex-settings {
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 1200px) {
+    .flex-settings {
+      font-size: 15px; } }
 
 .rules li {
   font-family: sans-serif;
@@ -1408,6 +1448,19 @@ footer {
       display: flex;
       align-items: center;
       width: 20rem !important;
+      flex-direction: column; } }
+
+@media only screen and (max-width: 1200px) {
+  .content-profile-large {
+    width: 96%; } }
+
+.form-responsive {
+  /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
+        the media queries only apply to screens
+        */ }
+  @media only screen and (max-width: 900px) {
+    .form-responsive {
+      display: flex;
       flex-direction: column; } }
 
 .locations {

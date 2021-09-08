@@ -3,12 +3,15 @@
   height: 42rem;
   min-width: 28rem;
   padding: 1rem;
+  @include respond(tab-land) {
+    height: 13rem;
+  }
 }
 .panel {
   padding: 1rem;
   width: 100%;
 
-  height: 42rem;
+  height: 47rem;
   @include respond(tab-port) {
     font-size: 14px;
     padding: 3px;
@@ -17,6 +20,9 @@
 
 .profile-content {
   display: flex;
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
   @include respond(phone) {
     width: 42rem;
   }
@@ -30,8 +36,14 @@
   border: 2px solid #7ed56f;
   transition: all 0.6s;
 
+  @include respond(tab-land) {
+    // height: 34%;
+    font-size: 14px;
+    width: 44%;
+  }
   @include respond(tab-port) {
-    width: 95%;
+    font-size: 14px;
+    width: 44%;
   }
 }
 .available {
@@ -54,6 +66,23 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  @include respond(tab-port) {
+    flex-direction: column;
+    width: 35%;
+    height: 23rem;
+  }
+}
+.panel-long {
+  @include respond(tab-port) {
+    height: 60rem;
+  }
+}
+.password-center {
+  @include respond(tab-port) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .new-pass {
   display: flex;
@@ -166,6 +195,10 @@
 .flex-settings {
   display: flex;
   align-items: center;
+
+  @include respond(tab-land) {
+    font-size: 15px;
+  }
 }
 .rules li {
   font-family: sans-serif;
@@ -229,6 +262,17 @@
     display: flex;
     align-items: center;
     width: 20rem !important;
+    flex-direction: column;
+  }
+}
+.content-profile-large {
+  @include respond(tab-land) {
+    width: 96%;
+  }
+}
+.form-responsive {
+  @include respond(tab-port) {
+    display: flex;
     flex-direction: column;
   }
 }
