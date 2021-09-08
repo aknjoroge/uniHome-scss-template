@@ -1,6 +1,13 @@
 footer {
   background-color: #444;
   padding: 2rem;
+  @include respond(tab-port) {
+    font-size: 13px;
+    padding: 1rem;
+  }
+  @include respond(phone) {
+    font-size: 11px;
+  }
 }
 
 .footer-link-item:not(:last-child) {

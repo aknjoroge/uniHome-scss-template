@@ -25,6 +25,9 @@ header {
 .naviagtion {
   align-items: center;
   display: flex;
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 .navlist {
   margin: 5px;
@@ -126,6 +129,9 @@ th {
 .item-estate {
   margin-bottom: 5px;
   margin-top: 5px;
+  @include respond(tab-port) {
+    font-size: 13px;
+  }
 }
 // .item-location-details {
 //   // background-color: #f7f7f7;
@@ -433,4 +439,69 @@ td {
   text-align: center;
   height: 164px;
 }
- 
+
+//Login admin responsive
+.full-length {
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+.owner-dash-item {
+  @include respond(tab-port) {
+    min-width: 241px !important;
+    min-height: 198px !important;
+    margin: 10px !important;
+  }
+  @include respond(phone) {
+    min-width: 194px !important;
+    min-height: 195px !important;
+  }
+}
+
+.owner-home-container {
+  @include respond(tab-port) {
+    font-size: 15px;
+  }
+}
+
+.form_group-login {
+  @include respond(phone) {
+    margin: 8px;
+    flex-direction: column;
+  }
+}
+.owner-item-body {
+  @include respond(tab-land) {
+    font-size: 15px;
+  }
+  @include respond(tab-port) {
+    font-size: 13px;
+  }
+  @include respond(phone-large) {
+    flex-direction: column;
+    width: 218px;
+  }
+}
+.owner-item {
+  @include respond(phone-large) {
+    margin: 12px;
+    min-width: 215px;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    text-align: center;
+  }
+}
+.profile-form-inner {
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#owner-long {
+  @include respond(tab-port) {
+    height: 92rem !important;
+  }
+}

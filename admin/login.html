@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header-custom">
-      <nav class="navbar">
+      <nav class="navbar login-nav">
         <ul class="navbar-list">
         
          
@@ -19,41 +19,42 @@
       </nav>
     </header>
     <div class="loginbody">
-      <div class="login">
-        <div class="modal modal-login hidden">
-          <div class="backdrop">
-          </div>
-            <div class="forgot-password">
-              <div class="card login-card">
-                <div class="close">
-                  <svg  class="close-modal-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                </svg></div>
-                <h3 class="reset-title">Get reset link</h3>
-
-                <form id="resetForm">
-                  <div class="form_group">
-                    <label>Email</label>
-                    <input
-                      class="inputfield"
-                      placeholder="you@example.com"
-                      type="email"
-                      name="email"
-                      id=""
-                      required
-                    />
-                  </div>
-                  <div class="form_group-input">
-                    <input class="btn btn--green" type="submit" value="Reset" />
-                  </div>
-                </form>
-              </div>
-            </div>
-         
+      <div class="modal modal-login hidden">
+        <div class="backdrop">
         </div>
+          <div class="forgot-password">
+            <div class="card login-card">
+              <div class="close">
+                <svg  class="close-modal-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg></div>
+              <h3 class="reset-title">Get reset link</h3>
+
+              <form id="resetForm">
+                <div class="form_group">
+                  <label>Email</label>
+                  <input
+                    class="inputfield"
+                    placeholder="you@example.com"
+                    type="email"
+                    name="email"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="form_group-input">
+                  <input class="btn btn--green" type="submit" value="Reset" />
+                </div>
+              </form>
+            </div>
+          </div>
+       
+      </div>
+      <div class="login">
+        
 
         <main class="login-container">
-          <div class="card">
+          <div class="card login-card">
           <img
         class="login-logo"
         src="../assets/img/logo.png"
@@ -68,12 +69,12 @@
            
             <h3 class="logintitle">Enter Techkey Credentials </h3>
             <hr />
-            <div class="form-container">
+            <div class="form-container admin-login-container">
               <form id="owners-login-form">
-                <div class="form_group">
+                <div class="form_group form_group-login">
                   <label>  Name</label>
                   <input
-                    class="inputfield"
+                    class="inputfield login-input"
                     placeholder="John"
                     type="text"
                     id=""
@@ -81,20 +82,20 @@
                   />
                   
                 </div>
-                <div class="form_group">
+                <div class="form_group form_group-login">
                   <label>Email</label>
                   <input
-                    class="inputfield"
+                    class="inputfield login-input"
                     placeholder="you@example.com"
                     type="email"
                     id=""
                     required
                   />
                 </div>
-                <div class="form_group">
+                <div class="form_group form_group-login">
                   <label for="">Password</label>
                   <input
-                    class="inputfield"
+                    class="inputfield login-input"
                     required
                     placeholder="••••••••"
                     type="password"

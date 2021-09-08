@@ -8,6 +8,9 @@ body {
   padding: 0;
   font-family: "Lato", sans-serif;
   color: #777;
+  @include respond(super-big) {
+    font-size: 23px;
+  }
 }
 
 body::-webkit-scrollbar {

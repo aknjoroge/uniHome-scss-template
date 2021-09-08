@@ -1,12 +1,17 @@
-// .login {
-//    background-color: #d2d6de;
-// }
+.login {
+  //  background-color: #d2d6de;
+  width: 100%;
+}
 .loginbody {
   // background-image: url("../../../assets/img/background.jpg");
-  background-color: #f7f7f7;
 
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  background-color: #f7f7f7;
+  background-repeat: repeat;
+  background-size: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 .form-container {
   display: flex;
@@ -14,6 +19,10 @@
   text-align: start;
   justify-content: center;
   margin-top: 20px;
+  @include respond(tab-land) {
+    margin-top: 6px;
+    justify-content: space-around;
+  }
 }
 .login-container {
   display: flex;
@@ -21,7 +30,12 @@
   flex-direction: column;
   // justify-content: center;
   // height: 100vh;
+  // width: 100%;
   padding: 2rem;
+
+  @include respond(phone) {
+    padding: 0;
+  }
 }
 form input {
   margin: 12px;
@@ -38,6 +52,12 @@ form input {
 }
 hr {
   margin-top: 20px;
+  @include respond(tab-land) {
+    margin-top: 14px;
+  }
+  @include respond(phone) {
+    margin-top: 10px;
+  }
 }
 input {
   transition: all 0.1s;
@@ -61,11 +81,26 @@ input::placeholder {
   border: none;
   border-bottom: 2px transparent;
   border-top: 2px transparent;
+  @include respond(tab-land) {
+    @include respond(tab-land) {
+      font-size: 14px;
+    }
+  }
 }
 
 .logintitle {
   opacity: 0.8;
   font-weight: 400;
+  @include respond(big-desktop) {
+  }
+  @include respond(tab-land) {
+    font-size: 15px;
+  }
+  @include respond(tab-port) {
+  }
+
+  @include respond(phone) {
+  }
 }
 
 .forgot {
@@ -74,6 +109,9 @@ input::placeholder {
   transition: all 0.2s;
   font-family: sans-serif;
   font-size: 13px;
+  @include respond(tab-land) {
+    font-size: 12px;
+  }
 }
 .forgot:hover {
   color: black;
@@ -105,6 +143,14 @@ input::placeholder {
 
 .login-logo {
   margin-bottom: 10px;
+
+  @include respond(tab-land) {
+    width: 76px;
+  }
+
+  @include respond(phone) {
+    width: 60px;
+  }
 }
 
 .register-form {
@@ -122,7 +168,8 @@ input::placeholder {
   z-index: 1;
   width: 100%;
   background-color: #000000c7;
-  height: 100vh;
+  // height: 100vh;
+  height: 100%;
 }
 
 .forgot-password {
@@ -139,6 +186,8 @@ input::placeholder {
 .modal-login {
   position: absolute;
   width: 100%;
+  z-index: 10000;
+  height: 101%;
 }
 .login-card {
   z-index: 1000;
@@ -150,4 +199,44 @@ input::placeholder {
 }
 .close-modal-btn:hover {
   cursor: pointer;
+}
+
+// ADMIN RESPONSIVE
+#owners-login-form {
+  @include respond(tab-land) {
+    font-size: 14px;
+  }
+}
+.login-card {
+  @include respond(tab-land) {
+    width: 19rem !important;
+    padding: 1rem !important;
+  }
+  @include respond(phone) {
+    width: 16rem !important;
+
+    padding: 1rem !important;
+  }
+}
+.login-nav {
+  @include respond(tab-land) {
+    display: none;
+  }
+  @include respond(tab-port) {
+  }
+}
+.login-input {
+  @include respond(tab-land) {
+    padding: 13px 5px;
+    margin: 8px;
+  }
+  @include respond(tab-port) {
+    padding: 13px 2px;
+    width: 190px;
+  }
+}
+.admin-login-container {
+  @include respond(phone) {
+    display: inherit;
+  }
 }
