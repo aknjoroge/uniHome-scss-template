@@ -450,13 +450,13 @@ td {
 
 .owner-dash-item {
   @include respond(tab-port) {
-    min-width: 241px !important;
+    min-width: 180px !important;
     min-height: 198px !important;
     margin: 10px !important;
   }
   @include respond(phone) {
-    min-width: 194px !important;
-    min-height: 195px !important;
+    min-width: 180px !important;
+    min-height: 198px !important;
   }
 }
 
@@ -488,6 +488,9 @@ td {
     flex-direction: column;
     width: 218px;
   }
+}
+.owner-item-body div {
+  padding: 8px;
 }
 .owner-item {
   @include respond(phone-large) {
@@ -573,4 +576,25 @@ td {
 }
 .txt-center {
   text-align: center;
+}
+.column-helper {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.column-helper div {
+  margin-bottom: 13px;
+  width: 19rem;
+  display: flex;
+  justify-content: space-between;
+}
+textarea {
+  @include respond(tab-land) {
+    width: 60% !important;
+  }
+}
+
+option {
+  font-size: 14px;
 }

@@ -7,347 +7,320 @@
     <title>Unihome</title>
     <link rel="stylesheet" href="./../assets/scss/build/main.css" />
     <link rel="stylesheet" href="./../assets/scss/build/owners.css" />
+    <link rel="stylesheet" href="./../assets/scss/build/layout.css" />
   </head>
   <body>
-    <header class="header-custom">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion">
-            <li class="navlist">
-
-              <li class="navlist"> <a href="home.html">
-                <img
-                  class="home-logo"
-                  src="../assets/img/logo.png"
-                  alt=""
-                  srcset=""
-                />
-              </a></li>
-              <a class="nav-link-item" href="myhouse.html"> My houses</a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="addhouse.html">Add a House </a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="bookings.html">Bookings </a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="bills.html">Bills </a>
-            </li>
-            
-          </div>
-      
-          <div class="users">
-            <a class="btn" href="#">Mary doe</a>
-
-          </div>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="profile-content">
-
-    
-        <div class="panel longer">
-            
-          <div class="content-profile ">
-
-            <div class="available">
-                
-                <p class="password-section"> House Upload</p>
-           
-                <div class="manual-option">
-
-                  <h3> <label for="">Add a new House  </label></h3>
-                
-                <label for="">Enter Your Id no</label>
-                <br>  <input
-                  class="inputfield"
-                  placeholder="37xxxx"
-                  type="number"
-             
-                  id=""
-                  required
-                />
-                <p>Your ID number is required for security reasons  </p>
-              
-                <p><a style="text-decoration: none;" href="#">Contact Admin to get help uploading</a></p>
-              </div>
-
-
-            </div>
-
-            <hr>
-            <p class="password-section"> House Details</p>
-            <div class="profile">
+    <div class="container"> 
+      <!--header column-->
+      <div class="columns">
+        <div class="column">
+          <header class="header-custom">
+            <nav class="navbar">
+              <ul class="navbar-list">
+                <div class="naviagtion">
+                  <li class="navlist">
           
+                    <li class="navlist"> <a href="home.html">
+                      <img
+                        class="home-logo"
+                        src="../assets/img/logo.png"
+                        alt=""
+                        srcset=""
+                      />
+                    </a></li>
+                    <a class="nav-link-item" href="myhouse.html"> My houses</a>
+                  </li>
+                  <li class="navlist">
+                    <a class="nav-link-item" href="addhouse.html">Add a House </a>
+                  </li>
+                  <li class="navlist">
+                    <a class="nav-link-item" href="bookings.html">Bookings </a>
+                  </li>
+                  <li class="navlist">
+                    <a class="nav-link-item" href="bills.html">Bills </a>
+                  </li>
+                  
+                </div>
             
-            <form class="name-form" >
-                
-              <div class="profile-form" >
-                  
-                <div>
-                  
-                  <label>Name</label>
-                  <input
-                    class="inputfield"
-                    placeholder="house"
-                    type="text"
-               
-                    id=""
-                    required
-                  />
-                  
-                  <label>Estate Name</label>
-                  <input
-                    class="inputfield"
-                    placeholder="  Adero"
-                    type="text"
-                    
-                    id=""
-                    required
-                  />
+                <div class="users">
+                  <a class="btn" href="#">Mary doe</a>
+          
                 </div>
-                <div class="price-detail">
-                  
-                  <label>Price</label>
-                  <input
-                    class="inputfield"
-                    placeholder="18000"
-                    type="number"
-               
-                    id=""
-                    required
-                  />
-                  <label>Location</label>
-                <select  class="inputfield" name="" >
-                    <option value="default">Select a location</option>
-                    <option value="nyawitta">Nyawitta</option>
-                    <option value="nyawitta">Across</option>
-                    <option value="nyawitta">Mumias</option>
-                    <option value="nyawitta">poster</option>
-                </select>
-                  
-                </div>
-               
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+<div class="border-green">
+  <div class="columns">
+  <div class="column txt-center">
+    <div class="available">
+      <br>
+            
+      <p class="password-section"> House Upload</p>
+ 
+      <div class="manual-option">
+
+        <h3> <label for="">Add a new House  </label></h3>
       
-                <p><a style="text-decoration: none; " href="#">Register A new location?</a></p>
-              </div>
-              
+      <label for="">Enter Your Id no</label>
+      <br>  <input
+        class="inputfield"
+        placeholder="37xxxx"
+        type="number"
+   
+        id=""
+        required
+      />
+      <p>Your ID number is required for security reasons  </p>
+    
+      <p><a style="text-decoration: none;" href="#">Contact Admin to get help uploading</a></p>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+
+  <div class="columns">
+    <div class="column">
+      <hr>
+      <p class="password-section"> House Details</p>
+
+      <form class="name-form" >
             
+        <div class="profile-form " >
             
-             
-            </form>
+          <div class="price-detail">
             
-            <hr>
-
-            <div class="options-section">
-
-
-              <p class="password-section"> House options</p>
-  
-             
-              <form>
+            <label>Name</label>
+            <input
+              class="inputfield"
+              placeholder="house"
+              type="text"
+         
+              id=""
+              required
+            />
+            
+            <label>Estate Name</label>
+            <input
+              class="inputfield"
+              placeholder="  Adero"
+              type="text"
               
-               
-                <div class="profile-form-password" >
-                  <div class="options-section-one">
-  
-                    <label>Shower</label>
-                    <select  class="inputfield" name="" id="">
-                      
-                        <option value="default">Select an option</option>
-                        <option value="not">Not Present</option>
-                        <option value="present">  Present</option>
-                    </select>
-  
-                    <label>Tiles</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option> 
-                      <option value="present">  Present</option>
-                        <option value="not">Not Present</option>
-                    </select>
-                    <label>Tokens</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option> 
-                      <option value="not"> Unavailable</option>
-                        <option value="present">  available</option>
-                    </select>
-                  
-                    <label>Ceiling</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option> 
-                      <option value="not">Not Present</option>
-                        <option value="present">  Present</option>
-                    </select>
-                  </div>
-                 
-        
-                  <div class="new-pass">
-  
-                    
-                    <label>Beddings</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option> 
-                      <option value="not">Not Replaced</option>
-                        <option value="present">  Replaced</option>
-                    </select>
-                    
-                    <label>Table</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option> 
-                      <option value="not">Not available</option>
-                        <option value="present">  available</option>
-                    </select>
-                    <label>Chair</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option> 
-                      <option value="not">Not available</option>
-                        <option value="present">  available</option>
-                    </select>
-  
-                    <label>Discount</label>
-                    <select  class="inputfield" name="" id="">
-                      <option value="default">Select an option</option>  
-                      <option value="not">No Discount</option>
-                        <option value="present">  20%</option>
-                        <option value="present">  50%</option>
-                        <option value="present">  70%</option>
-                        <option value="present">  90%</option>
-                    </select>
-                    
-                 
-        
-                  </div>
-                
-                  
-              </div>
-               
-                
-               
-              
-               
-              </form>
-            </div>
-
+              id=""
+              required
+            />
+          </div>
 
           
-           
-            <hr>
-
+          <div class="price-detail">
             
-
-            <div class="description-section">
-                <form >
-                    <p class="password-section"> House info</p>
-                 <div  >
-                   <br>
-                   
-                  <p class="password-section"> Description</p>                    
-                    <textarea     name="" id="" cols="30" rows="10"></textarea>
-                  
-                    <p class="password-section"> Terms and conditions info</p>
-                    <textarea  name="" id="" cols="30" rows="10"></textarea>
-                 
-                     
-                    <p class="password-section"> House Rules.  End each line with a Fullstop ( . )</p>
-                    <textarea  name="" id="" cols="30" rows="10"></textarea>
-    
-
-                 </div>
-                 
-                </form>
-            </div>
-             <hr>
-             <p class="password-section"> Media</p>
-             <div>
-
-                <div class="media">
-
-                  <div >
-                    <p>Compound</p>
-                   <input type="file">
-                </div>
-                  <div> 
-                    <p>House Floor</p><input type="file"></div>
-
-                  <div>
-                    <p>House interior 1</p> <input type="file">
-                </div>
-                  <div>
-                    <p>House interior 2</p>
-                    <input type="file">
-                   </div>
-                 
-                  </div>
-
-             </div>
-             <br>
+            <label>Price</label>
+            <input
+              class="inputfield"
+              placeholder="18000"
+              type="number"
+         
+              id=""
+              required
+            />
+            <label>Location</label>
+          <select  class="inputfield" name="" >
+              <option value="default">Select a location</option>
+              <option value="nyawitta">Nyawitta</option>
+              <option value="nyawitta">Across</option>
+              <option value="nyawitta">Mumias</option>
+              <option value="nyawitta">poster</option>
+          </select>
             
-             <br>
-            
+          </div>
+         
+<br>
+          <p><a style="text-decoration: none; " href="#">Register A new location?</a></p>
+        </div>
+        
+      
+      
+       
+      </form>
+    </div>
+  </div>
 
+  <div class="columns">
+    <div class="column options-section">
+    <hr>
+    <p class="password-section "> House options</p>
 
-           
-           <hr>
-           <div style="text-align: center;">
-            <img  
-            class="details-logo"
-            src="../assets/img/logo.png"
-            alt=""
-            srcset=""
-          />
+         <div class="columns">
+           <div class="column column-helper">
+
+           <div>
+            <label>Shower</label>
+            <select  class="inputfield" name="" id="">
+              
+                <option value="default">Select an option</option>
+                <option value="not">Not Present</option>
+                <option value="present">  Present</option>
+            </select>
            </div>
+  
+            <div>
+              <label>Tiles</label>
+            <select  class="inputfield" name="" id="">
+              <option value="default">Select an option</option> 
+              <option value="present">  Present</option>
+                <option value="not">Not Present</option>
+            </select>
+            </div>
+
+            <div>
+              <label>Tokens</label>
+            <select  class="inputfield" name="" id="">
+              <option value="default">Select an option</option> 
+              <option value="not"> Unavailable</option>
+                <option value="present">  available</option>
+            </select>
+            </div>
           
-           <div class="house-btns">
+           <div>
+            <label>Ceiling</label>
+            <select  class="inputfield" name="" id="">
+              <option value="default">Select an option</option> 
+              <option value="not">Not Present</option>
+                <option value="present">  Present</option>
+            </select>
+           </div>
+          </div>
+         <div class="column column-helper">
            
-             <a class="btn btn--green" href="#">Upload This House</a>
-             
-            </div>
-            <p class="house-btn-text"  >Reach 2000 students </p>
-         
-           <!--End-->
-
-            </div>
+          <div>
+            <label>Beddings</label>
+          <select  class="inputfield" name="" id="">
+            <option value="default">Select an option</option> 
+            <option value="not">Not Replaced</option>
+              <option value="present">  Replaced</option>
+          </select>
           </div>
-        </div>
-      </div>
-    <footer>
-      <div class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion-footer">
-            <li class="navlist">
+          
+          
+          <div>
+            <label>Table</label>
+          <select  class="inputfield" name="" id="">
+            <option value="default">Select an option</option> 
+            <option value="not">Not available</option>
+              <option value="present">  available</option>
+          </select>
+          </div>
 
-             
+          <div><label>Chair</label>
+            <select  class="inputfield" name="" id="">
+              <option value="default">Select an option</option> 
+              <option value="not">Not available</option>
+                <option value="present">  available</option>
+            </select></div>
 
-             <div class="site">
-              <a class="footer-link-item" href="#"> Site Map</a>
-               
-                <ul>
-                  <li> <a class="sitemap-link" href="#"> Profile</a> </li>
-                  <li> <a class="sitemap-link" href="#">Report an error </a> </li>
-                  <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
-                </ul>
-              
-             </div>
+          
 
-            </li>
+         <div>
+          <label>Discount</label>
+          <select  class="inputfield" name="" id="">
+            <option value="default">Select an option</option>  
+            <option value="not">No Discount</option>
+              <option value="present">  20%</option>
+              <option value="present">  50%</option>
+              <option value="present">  70%</option>
+              <option value="present">  90%</option>
+          </select>
+         </div>
+          
+         </div>
+           </div>
+         </div>
+ 
+    
      
-          </div>
+ 
+     
+    
+  </div> 
+
+
+  <div class="columns">
+    <div class="column">
+    <div class="description-section">
+      <form >
+          <p class="password-section"> House info</p>
+       <div  >
+         <br>
          
-          <div class="users">
-            <li class="navlist">
-              <a class="footer-link-item" href="#">About us</a>
-            </li>
+        <p class="password-section"> Description</p>                    
+          <textarea     name="" id="" cols="30" rows="10"></textarea>
+        
+          <p class="password-section"> Terms and conditions info</p>
+          <textarea  name="" id="" cols="30" rows="10"></textarea>
+       
+           
+          <p class="password-section"> House Rules.  End each line with a Fullstop ( . )</p>
+          <textarea  name="" id="" cols="30" rows="10"></textarea>
 
-          </div>
-        </ul>
-        <div class="creater">
-          <p>&copy; Unihome 2021</p>
-          <p>Powered by Techkey</p>
-        </div>
 
-      </div>
-    </footer>
+       </div>
+       
+      </form>
+  </div>
+  </div></div>
+  
+
+  <div class="columns">
+    <div class="column">
+      <p class="password-section"> Media</p>
+         <div>
+
+            <div class="media ">
+
+              <div >
+                <p>Compound</p>
+               <input type="file">
+            </div>
+              <div> 
+                <p>House Floor</p><input type="file"></div>
+
+              <div>
+                <p>House interior 1</p> <input type="file">
+            </div>
+              <div>
+                <p>House interior 2</p>
+                <input type="file">
+               </div>
+             
+              </div>
+
+         </div>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column">
+      <hr>
+      <br>
+     
+      <div class="house-btns">
+      
+        <a class="btn btn--green" href="#">Upload This House</a>
+        
+       </div>
+       <p class="house-btn-text"  >Reach 2000 students </p>
+       <br>
+    
+    </div>
+  </div>
+
+</div>
+
+
+    </div>
   </body>
 </html>

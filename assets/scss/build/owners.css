@@ -56,6 +56,9 @@ textarea {
   border-radius: 5px;
 
   border: none;
+
+
+
 }
 textarea:active,
 textarea:focus,
@@ -115,9 +118,7 @@ textarea:focus-visible {
   margin-top: 5px;
   font-family: sans-serif;
 }
-.price-detail {
-  width: 44rem;
-}
+ 
 .users a {
   color: white;
 }

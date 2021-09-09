@@ -1,181 +1,334 @@
-<header class="header-custom">
-  <nav class="navbar">
-    <ul class="navbar-list">
-      <div class="naviagtion">
-        <li class="navlist">
-
-          <li class="navlist"> <a href="home.html">
-            <img
-              class="home-logo"
-              src="../assets/img/logo.png"
-              alt=""
-              srcset=""
-            />
-          </a></li>
-          <a class="nav-link-item" href="allowners.html"> House Owners</a>
-        </li>
-        <li class="navlist">
-          <a class="nav-link-item" href="allusers.html">Users </a>
-        </li>
-
-        <li class="navlist">
-          <a class="nav-link-item" href="bills.html">Bills </a>
-        </li>
-        
-      </div>
-  
-      <div class="users">
-        <a class="btn" href="profile.html">Admin</a>
-
-      </div>
-    </ul>
-  </nav>
-</header>
-
-<div class="content">
-
-  <div class="house-main full-length">
-
-    <!--Start of item-->
-    <div class="owner-dash-item  ">          
-      <div class="item-details owner-home-container">
-        <div class="item-location-details">
-           
-          <p class="item-estate">
-            Number of users</p> 
-          
-        </div>
-        <h3>55</h3>
-        
-      </div>
-    </div>
-    <!--End of item-->
-    
-     <!--Start of item-->
-     <div class="owner-dash-item  ">          
-      <div class="item-details owner-home-container">
-        <div class="item-location-details">
-           
-          <p class="item-estate">
-            Search For a user</p> 
-          
-        </div>
-        <form class="form-search"> 
-          <div class="form_group">
-            
-            <input
-              class="inputfield search--input"
-              placeholder="email"
-              type="email"
-              name="searc"
-              id=""
-              required
-            />
-          </div>
-           
-          <div class="form_group-input">
-            <a href="#">
-              <svg class="hero-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-            </a>
-            
-          </div>
-
-         </form>
-        
-      </div>
-    </div>
-    <!--End of item-->
  
-    
+    <header class="header-custom">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <div class="naviagtion">
+            <li class="navlist">
+
+              <li class="navlist"> <a href="home.html">
+                <img
+                  class="home-logo"
+                  src="../assets/img/logo.png"
+                  alt=""
+                  srcset=""
+                />
+              </a></li>
+              <a class="nav-link-item" href="myhouse.html"> My houses</a>
+            </li>
+            <li class="navlist">
+              <a class="nav-link-item" href="addhouse.html">Add a House </a>
+            </li>
+            <li class="navlist">
+              <a class="nav-link-item" href="bookings.html">Bookings </a>
+            </li>
+            <li class="navlist">
+              <a class="nav-link-item" href="bills.html">Bills </a>
+            </li>
+            
           </div>
-  <div class="owner-main">
+      
+          <div class="users">
+            <a class="btn" href="#">Mary doe</a>
 
-    <ol type="1">
+          </div>
+        </ul>
+      </nav>
+    </header>
 
-<li><!--item-->
-<div class="owner-item-body">
-<div class="owner-item">
- <img
- class="home-logo"
- src="../assets/img/logo.png"
- alt=""
- srcset=""
-/>
-</div>
-<div class="owner-item">
-  <h3>John Amdoe</h3>
-  <h3 class="light">0710xxxxxx</h3>
-  <h3 class="light">john@example.com</h3>
-</div>
-<div class="owner-item">
-  <h3>
-    Registered 23 Aug
-  </h3>
-</div>
-<div class="owner-item">
-  <a class="btn btn--red" href="#">Deactivate</a>
-  <a class="btn btn--blue"  href="#">contact</a>
-</div>
-</div>
-<!--End of item--></li>
-
-
-
-    </ol>
-
-
-  
-
-  
-
-  
+    <div class="profile-content">
 
     
+        <div class="panel longer">
+            
+          <div class="content-profile ">
+
+            <div class="available">
+
+                <p class="password-section"> Manual Booking</p>
+           
+                <div class="manual-option">
+
+                  <h3> <label for="">House Available</label></h3>
+                <select class="inputfield" name="" id="">
+                    <option value="">True</option>
+                    <option value="">False</option>
+                </select>
+                <p>This will Enable or Disable the house, leave it to true if no one has booked it </p>
+                </div>
+
+
+            </div>
+
+            <hr>
+            <p class="password-section"> Details Update</p>
+            <div class="profile">
+            <form class="name-form" >
+              <div class="profile-form" >
+                <div>
+                  <label>Name</label>
+                  <input
+                    class="inputfield"
+                    placeholder="Pink house"
+                    type="text"
+               
+                    id=""
+                    required
+                  />
+                  
+                  <label>Estate Name</label>
+                  <input
+                    class="inputfield"
+                    placeholder="John Adero"
+                    type="text"
+                    
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="price-detail">
+                  
+                  <label>Price</label>
+                  <input
+                    class="inputfield"
+                    placeholder="18000"
+                    type="number"
+               
+                    id=""
+                    required
+                  />
+                  <label>Location</label>
+                <select  class="inputfield" name="" >
+                    <option value="nyawitta">Nyawitta</option>
+                    <option value="nyawitta">Across</option>
+                    <option value="nyawitta">Mumias</option>
+                    <option value="nyawitta">poster</option>
+                </select>
+                   
+                </div>
+               
+      
+                <div class="form_group-input">
+                  <input class="btn btn--blue" type="submit" value="update " />
+                </div>
+              </div>
+              
+            
+            
+             
+            </form>
+            
+            <hr>
+
+            <div class="options-section">
+
+
+              <p class="password-section"> House options</p>
+  
+             
+              <form>
+              
+               
+                <div class="profile-form-password" >
+                  <div class="options-section-one">
+  
+                    <label>Shower</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not">Not Present</option>
+                        <option value="present">  Present</option>
+                    </select>
+  
+                    <label>Tiles</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="present">  Present</option>
+                        <option value="not">Not Present</option>
+                    </select>
+                    <label>Tokens</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not"> Unavailable</option>
+                        <option value="present">  available</option>
+                    </select>
+                  
+                    <label>Ceiling</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not">Not Present</option>
+                        <option value="present">  Present</option>
+                    </select>
+                  </div>
+                 
+        
+                  <div class="new-pass">
+  
+                    
+                    <label>Beddings</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not">Not Replaced</option>
+                        <option value="present">  Replaced</option>
+                    </select>
+                    
+                    <label>Table</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not">Not available</option>
+                        <option value="present">  available</option>
+                    </select>
+                    <label>Chair</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not">Not available</option>
+                        <option value="present">  available</option>
+                    </select>
+  
+                    <label>Discount</label>
+                    <select  class="inputfield" name="" id="">
+                        <option value="not">No Discount</option>
+                        <option value="present">  20%</option>
+                        <option value="present">  50%</option>
+                        <option value="present">  70%</option>
+                        <option value="present">  90%</option>
+                    </select>
+                    
+                 
+        
+                  </div>
+                
+                  
+              </div>
+              <div class="form_group-input">
+                <input class="btn btn--blue" type="submit" value="update " />
+              </div>
+                
+               
+              
+               
+              </form>
+            </div>
+
+
+          
+           
+            <hr>
+
+            
+
+            <div class="description-section">
+                <form >
+                    <p class="password-section"> House info</p>
+                 <div  >
+                   <br>
+                  <p class="password-section"> Description</p>
+                    
+                    <textarea     name="" id="" cols="30" rows="10"></textarea>
+                     
+                    <p class="password-section"> Terms and conditions info</p>
+                    <textarea  name="" id="" cols="30" rows="10"></textarea>
     
-   
+                    <p class="password-section"> House Rules</p>
+                    <textarea  name="" id="" cols="30" rows="10"></textarea>
+    
+
+                 </div>
+                 <div class="form_group-input">
+                    <input class="btn btn--blue" type="submit" value="update " />
+                  </div>
+                </form>
+            </div>
+             <hr>
+             
+             <p class="password-section"> Media</p>
+             <div>
+
+                <div class="media">
+
+                  <div >
+                    <p>Compound</p>
+                    <img
+                    class="details-logo"
+                    src="../assets/img/logo.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                  <div> 
+                    <p>House Floor</p><img
+                    class="details-logo"
+                    src="../assets/img/logo.png"
+                    alt=""
+                    srcset=""
+                  /></div>
+
+                  <div>
+                    <p>House interior 1</p> <img
+                    class="details-logo"
+                    src="../assets/img/logo.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                  <div>
+                    <p>House interior 2</p>
+                    <img
+                    class="details-logo"
+                    src="../assets/img/logo.png"
+                    alt=""
+                    srcset=""
+                  /></div>
+                 
+                  </div>
+
+             </div>
+             <br>
+            
+             <br>
+            
 
 
-
-
-  </div>
-</div>
-
-<footer>
-  <div class="navbar">
-    <ul class="navbar-list">
-      <div class="naviagtion-footer">
-        <li class="navlist">
-
+           
+           <hr>
+           <div class="house-btns">
+             <a class="btn btn--red" href="#">Delete House</a>
+             <a class="btn btn--green" href="#">Promote This House</a>
+             
+            </div>
+            <p class="house-btn-text"  >Promote this house to reach more potential customers</p>
          
+           <!--End-->
 
-         <div class="site">
-          <a class="footer-link-item" href="#"> Site Map</a>
-           
-            <ul>
-              <li> <a class="sitemap-link" href="#"> Profile</a> </li>
-              <li> <a class="sitemap-link" href="#">Report an error </a> </li>
-              <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
-            </ul>
-          
-         </div>
-
-        </li>
- 
+            </div>
+          </div>
+        </div>
       </div>
+    <footer>
+      <div class="navbar">
+        <ul class="navbar-list">
+          <div class="naviagtion-footer">
+            <li class="navlist">
+
+             
+
+             <div class="site">
+              <a class="footer-link-item" href="#"> Site Map</a>
+               
+                <ul>
+                  <li> <a class="sitemap-link" href="#"> Profile</a> </li>
+                  <li> <a class="sitemap-link" href="#">Report an error </a> </li>
+                  <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
+                </ul>
+              
+             </div>
+
+            </li>
      
-      <div class="users">
-        <li class="navlist">
-          <a class="footer-link-item" href="#">About us</a>
-        </li>
+          </div>
+         
+          <div class="users">
+            <li class="navlist">
+              <a class="footer-link-item" href="#">About us</a>
+            </li>
+
+          </div>
+        </ul>
+        <div class="creater">
+          <p>&copy; Unihome 2021</p>
+          <p>Powered by Techkey</p>
+        </div>
 
       </div>
-    </ul>
-    <div class="creater">
-      <p>&copy; Unihome 2021</p>
-      <p>Powered by Techkey</p>
-    </div>
-
-  </div>
-</footer>
+    </footer>

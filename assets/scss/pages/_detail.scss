@@ -84,7 +84,19 @@
   min-width: 36rem;
   padding: 2rem;
   display: flex;
+
+  @include respond(phone-large) {
+    min-width: 25rem;
+    flex-direction: column;
+  }
 }
+
+.media div {
+  @include respond(phone-large) {
+    width: 10rem;
+  }
+}
+
 .house-info {
   border-radius: 10px;
   background-color: #f7f7f7;
@@ -104,6 +116,12 @@
 }
 .details-logo {
   min-width: 280px;
+  @include respond(tab-land) {
+    min-width: 166px;
+  }
+  @include respond(phone-large) {
+    min-width: 136px;
+  }
 }
 
 .details-content-media {

@@ -7,191 +7,206 @@
     <title>Unihome</title>
     <link rel="stylesheet" href="./../assets/scss/build/main.css" />
     <link rel="stylesheet" href="./../assets/scss/build/owners.css" />
+    <link rel="stylesheet" href="./../assets/scss/build/layout.css" />
   </head>
   <body>
-    <header class="header-custom">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion">
-            <li class="navlist">
-
-              <li class="navlist"> <a href="home.html">
-                <img
-                  class="home-logo"
-                  src="../assets/img/logo.png"
-                  alt=""
-                  srcset=""
-                />
-              </a></li>
-              <a class="nav-link-item" href="myhouse.html"> My houses</a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="addhouse.html">Add a House </a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="bookings.html">Bookings </a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="bills.html">Bills </a>
-            </li>
-            
-          </div>
-      
-          <div class="users">
-            <a class="btn" href="#">Mary doe</a>
-
-          </div>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="profile-content">
-
+   <div class="container">
+     <!--header column-->
+     <div class="columns">
+       <div class="column">
+        <header class="header-custom">
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <div class="naviagtion">
+                <li class="navlist">
     
-        <div class="panel longer">
-            
-          <div class="content-profile ">
-
-            <div class="available">
-
-                <p class="password-section"> Manual Booking</p>
-           
-                <div class="manual-option">
-
-                  <h3> <label for="">House Available</label></h3>
-                <select class="inputfield" name="" id="">
-                    <option value="">True</option>
-                    <option value="">False</option>
-                </select>
-                <p>This will Enable or Disable the house, leave it to true if no one has booked it </p>
-                </div>
-
-
-            </div>
-
-            <hr>
-            <p class="password-section"> Details Update</p>
-            <div class="profile">
-          
-            
-            <form class="name-form" >
+                  <li class="navlist"> <a href="home.html">
+                    <img
+                      class="home-logo"
+                      src="../assets/img/logo.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </a></li>
+                  <a class="nav-link-item" href="myhouse.html"> My houses</a>
+                </li>
+                <li class="navlist">
+                  <a class="nav-link-item" href="addhouse.html">Add a House </a>
+                </li>
+                <li class="navlist">
+                  <a class="nav-link-item" href="bookings.html">Bookings </a>
+                </li>
+                <li class="navlist">
+                  <a class="nav-link-item" href="bills.html">Bills </a>
+                </li>
                 
-              <div class="profile-form" >
-                  
-                <div>
-                  
-                  <label>Name</label>
-                  <input
-                    class="inputfield"
-                    placeholder="Pink house"
-                    type="text"
-               
-                    id=""
-                    required
-                  />
-                  
-                  <label>Estate Name</label>
-                  <input
-                    class="inputfield"
-                    placeholder="John Adero"
-                    type="text"
-                    
-                    id=""
-                    required
-                  />
-                </div>
-                <div class="price-detail">
-                  
-                  <label>Price</label>
-                  <input
-                    class="inputfield"
-                    placeholder="18000"
-                    type="number"
-               
-                    id=""
-                    required
-                  />
-                  <label>Location</label>
-                <select  class="inputfield" name="" >
-                    <option value="nyawitta">Nyawitta</option>
-                    <option value="nyawitta">Across</option>
-                    <option value="nyawitta">Mumias</option>
-                    <option value="nyawitta">poster</option>
-                </select>
-                   
-                </div>
-               
-      
-                <div class="form_group-input">
-                  <input class="btn btn--blue" type="submit" value="update " />
-                </div>
               </div>
+          
+              <div class="users">
+                <a class="btn" href="#">Mary doe</a>
+    
+              </div>
+            </ul>
+          </nav>
+        </header>
+       </div>
+     </div>
+
+     <div class="border-green">
+       <div class="columns">
+       <div class="column">
+        <div class="available">
+
+          <p class="password-section"> Manual Booking</p>
+     
+          <div class="manual-option">
+
+            <h3> <label for="">House Available</label></h3>
+          <select class="inputfield" name="" id="">
+              <option value="">True</option>
+              <option value="">False</option>
+          </select>
+          <p>This will Enable or Disable the house, leave it to true if no one has booked it </p>
+          </div>
+      </div>
+       </div>
+    </div>
+
+
+    <div class="columns">
+    <div class="column">
+      <hr>
+      <p class="password-section"> Details Update</p>
+      <div class="profile">
+      <form class="name-form" >
+        <div class="profile-form" >
+          <div class="price-detail">
+            <label>Name</label>
+            <input
+              class="inputfield"
+              placeholder="Pink house"
+              type="text"
+         
+              id=""
+              required
+            />
+            
+            <label>Estate Name</label>
+            <input
+              class="inputfield"
+              placeholder="John Adero"
+              type="text"
               
+              id=""
+              required
+            />
+          </div>
+          <div class="price-detail">
             
-            
+            <label>Price</label>
+            <input
+              class="inputfield"
+              placeholder="18000"
+              type="number"
+         
+              id=""
+              required
+            />
+            <label>Location</label>
+          <select  class="inputfield" name="" >
+              <option value="nyawitta">Nyawitta</option>
+              <option value="nyawitta">Across</option>
+              <option value="nyawitta">Mumias</option>
+              <option value="nyawitta">poster</option>
+          </select>
              
-            </form>
-            
-            <hr>
+          </div>
+         
 
-            <div class="options-section">
-
-
-              <p class="password-section"> House options</p>
-  
-             
-              <form>
-              
-               
-                <div class="profile-form-password" >
-                  <div class="options-section-one">
-  
-                    <label>Shower</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not Present</option>
-                        <option value="present">  Present</option>
-                    </select>
-  
-                    <label>Tiles</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="present">  Present</option>
-                        <option value="not">Not Present</option>
-                    </select>
-                    <label>Tokens</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not"> Unavailable</option>
-                        <option value="present">  available</option>
-                    </select>
-                  
-                    <label>Ceiling</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not Present</option>
-                        <option value="present">  Present</option>
-                    </select>
-                  </div>
-                 
+          <div class="form_group-input">
+            <input class="btn btn--blue" type="submit" value="update " />
+          </div>
+        </div>
         
-                  <div class="new-pass">
+      
+      
+       
+      </form>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="columns">
+      <div class="column options-section">
+      <hr>
+      <p class="password-section "> House options</p>
   
-                    
-                    <label>Beddings</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not Replaced</option>
-                        <option value="present">  Replaced</option>
-                    </select>
-                    
-                    <label>Table</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not available</option>
-                        <option value="present">  available</option>
-                    </select>
-                    <label>Chair</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not available</option>
-                        <option value="present">  available</option>
-                    </select>
+           <div class="columns">
+             <div class="column column-helper">
   
-                    <label>Discount</label>
+             <div>
+              <label>Shower</label>
+              <select  class="inputfield" name="" id="">
+                
+                <option value="not">Not Present</option>
+                <option value="present">  Present</option>
+              </select>
+             </div>
+    
+              <div>
+                <label>Tiles</label>
+              <select  class="inputfield" name="" id="">
+                <option value="present">  Present</option>
+                <option value="not">Not Present</option>
+              </select>
+              </div>
+  
+              <div>
+                <label>Tokens</label>
+              <select  class="inputfield" name="" id="">
+                <option value="not"> Unavailable</option>
+                <option value="present">  available</option>
+              </select>
+              </div>
+            
+             <div>
+              <label>Ceiling</label>
+              <select  class="inputfield" name="" id="">
+                <option value="not">Not Present</option>
+                <option value="present">  Present</option>
+              </select>
+             </div>
+            </div>
+           <div class="column column-helper">
+             
+            <div>
+              <label>Beddings</label>
+            <select  class="inputfield" name="" id="">
+              <option value="not">Not Replaced</option>
+              <option value="present">  Replaced</option>
+            </select>
+            </div>
+            
+            
+            <div>
+              <label>Table</label>
+            <select  class="inputfield" name="" id="">
+              <option value="not">Not available</option>
+              <option value="present">  available</option>
+            </select>
+            </div>
+  
+            <div><label>Chair</label>
+              <select  class="inputfield" name="" id="">
+                <option value="not">Not available</option>
+                <option value="present">  available</option>
+              </select></div>
+  
+            
+  
+           <div>
+            <label>Discount</label>
                     <select  class="inputfield" name="" id="">
                         <option value="not">No Discount</option>
                         <option value="present">  20%</option>
@@ -199,152 +214,120 @@
                         <option value="present">  70%</option>
                         <option value="present">  90%</option>
                     </select>
-                    
-                 
-        
-                  </div>
+           </div>
+            
+           </div>
+             </div>
+           </div>
+   
+      
+       
+   
+       
+      
+    </div> 
+
+    <div class="columns">
+      <div class="column">
+        <hr>
+
+            
+
+        <div class="description-section">
+            <form >
+                <p class="password-section"> House info</p>
+             <div  >
+               <br>
+              <p class="password-section"> Description</p>
                 
-                  
-              </div>
-              <div class="form_group-input">
+                <textarea     name="" id="" cols="30" rows="10"></textarea>
+                 
+                <p class="password-section"> Terms and conditions info</p>
+                <textarea  name="" id="" cols="30" rows="10"></textarea>
+
+                <p class="password-section"> House Rules</p>
+                <textarea  name="" id="" cols="30" rows="10"></textarea>
+
+
+             </div>
+             <div class="form_group-input">
                 <input class="btn btn--blue" type="submit" value="update " />
               </div>
-                
-               
-              
-               
-              </form>
-            </div>
+            </form>
+        </div>
+         <hr>
+      </div>
+    </div>
 
 
-          
-           
-            <hr>
+    <div class="columns">
+      <div class="column">
+        <p class="password-section"> Media</p>
+        <div>
 
-            
+           <div class="media">
 
-            <div class="description-section">
-                <form >
-                    <p class="password-section"> House info</p>
-                 <div  >
-                   <br>
-                  <p class="password-section"> Description</p>
-                    
-                    <textarea     name="" id="" cols="30" rows="10"></textarea>
-                     
-                    <p class="password-section"> Terms and conditions info</p>
-                    <textarea  name="" id="" cols="30" rows="10"></textarea>
-    
-                    <p class="password-section"> House Rules</p>
-                    <textarea  name="" id="" cols="30" rows="10"></textarea>
-    
+             <div >
+               <p>Compound</p>
+               <img
+               class="details-logo"
+               src="../assets/img/logo.png"
+               alt=""
+               srcset=""
+             />
+           </div>
+             <div> 
+               <p>House Floor</p><img
+               class="details-logo"
+               src="../assets/img/logo.png"
+               alt=""
+               srcset=""
+             /></div>
 
-                 </div>
-                 <div class="form_group-input">
-                    <input class="btn btn--blue" type="submit" value="update " />
-                  </div>
-                </form>
-            </div>
-             <hr>
-             <p class="password-section"> Media</p>
              <div>
-
-                <div class="media">
-
-                  <div >
-                    <p>Compound</p>
-                    <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                  <div> 
-                    <p>House Floor</p><img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  /></div>
-
-                  <div>
-                    <p>House interior 1</p> <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                  <div>
-                    <p>House interior 2</p>
-                    <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  /></div>
-                 
-                  </div>
-
-             </div>
-             <br>
+               <p>House interior 1</p> <img
+               class="details-logo"
+               src="../assets/img/logo.png"
+               alt=""
+               srcset=""
+             />
+           </div>
+             <div>
+               <p>House interior 2</p>
+               <img
+               class="details-logo"
+               src="../assets/img/logo.png"
+               alt=""
+               srcset=""
+             /></div>
             
-             <br>
-            
-
-
-           
-           <hr>
-           <div class="house-btns">
-             <a class="btn btn--red" href="#">Delete House</a>
-             <a class="btn btn--green" href="#">Promote This House</a>
-             
-            </div>
-            <p class="house-btn-text"  >Promote this house to reach more potential customers</p>
-         
-           <!--End-->
-
-            </div>
-          </div>
-        </div>
-      </div>
-    <footer>
-      <div class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion-footer">
-            <li class="navlist">
-
-             
-
-             <div class="site">
-              <a class="footer-link-item" href="#"> Site Map</a>
-               
-                <ul>
-                  <li> <a class="sitemap-link" href="#"> Profile</a> </li>
-                  <li> <a class="sitemap-link" href="#">Report an error </a> </li>
-                  <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
-                </ul>
-              
              </div>
 
-            </li>
-     
-          </div>
-         
-          <div class="users">
-            <li class="navlist">
-              <a class="footer-link-item" href="#">About us</a>
-            </li>
-
-          </div>
-        </ul>
-        <div class="creater">
-          <p>&copy; Unihome 2021</p>
-          <p>Powered by Techkey</p>
         </div>
-
       </div>
-    </footer>
+    </div>
+
+
+    <div class="columns">
+      <div class="column">
+        <hr>
+        <div class="house-btns">
+          <a class="btn btn--red" href="#">Delete House</a>
+          <a class="btn btn--green" href="#">Promote This House</a>
+          
+         </div>
+         <p class="house-btn-text"  >Promote this house to reach more potential customers</p>
+      
+         <hr>
+      </div>
+    </div>
+
+    <!--End of border-->
+     </div>
+
+
+   </div>
+
+
   </body>
 </html>

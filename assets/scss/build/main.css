@@ -854,13 +854,13 @@ td {
         */ }
   @media only screen and (max-width: 900px) {
     .owner-dash-item {
-      min-width: 241px !important;
+      min-width: 180px !important;
       min-height: 198px !important;
       margin: 10px !important; } }
   @media only screen and (max-width: 600px) {
     .owner-dash-item {
-      min-width: 194px !important;
-      min-height: 195px !important; } }
+      min-width: 180px !important;
+      min-height: 198px !important; } }
 
 .owner-home-container {
   /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
@@ -893,6 +893,9 @@ td {
     .owner-item-body {
       flex-direction: column;
       width: 218px; } }
+
+.owner-item-body div {
+  padding: 8px; }
 
 @media only screen and (max-width: 750px) {
   .owner-item {
@@ -968,6 +971,25 @@ td {
 .txt-center {
   text-align: center; }
 
+.column-helper {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.column-helper div {
+  margin-bottom: 13px;
+  width: 19rem;
+  display: flex;
+  justify-content: space-between; }
+
+@media only screen and (max-width: 1200px) {
+  textarea {
+    width: 60% !important; } }
+
+option {
+  font-size: 14px; }
+
 .hero {
   height: 430px;
   clip-path: polygon(0 0, 100% 0, 100% 53%, 0 100%);
@@ -1041,6 +1063,14 @@ td {
   min-width: 36rem;
   padding: 2rem;
   display: flex; }
+  @media only screen and (max-width: 750px) {
+    .media {
+      min-width: 25rem;
+      flex-direction: column; } }
+
+@media only screen and (max-width: 750px) {
+  .media div {
+    width: 10rem; } }
 
 .house-info {
   border-radius: 10px;
@@ -1060,6 +1090,12 @@ td {
 
 .details-logo {
   min-width: 280px; }
+  @media only screen and (max-width: 1200px) {
+    .details-logo {
+      min-width: 166px; } }
+  @media only screen and (max-width: 750px) {
+    .details-logo {
+      min-width: 136px; } }
 
 .details-content-media {
   display: flex;
@@ -1505,6 +1541,10 @@ footer {
   color: #7ed56f; }
 
 .price-detail {
+  width: 44rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
   /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
         the media queries only apply to screens
         */ }
