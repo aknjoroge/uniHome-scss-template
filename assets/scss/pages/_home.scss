@@ -147,6 +147,7 @@ td {
 
 .form-search {
   display: flex;
+  justify-content: center;
 }
 .search--input {
   border: 0px;
@@ -464,6 +465,11 @@ td {
     font-size: 15px;
   }
 }
+.content-profile-wider {
+  @include respond(phone) {
+    width: 99%;
+  }
+}
 
 .form_group-login {
   @include respond(phone) {
@@ -494,6 +500,11 @@ td {
     text-align: center;
   }
 }
+.owner-item h3 {
+  @include respond(phone-large) {
+    font-size: 13px;
+  }
+}
 .profile-form-inner {
   @include respond(tab-port) {
     display: flex;
@@ -504,4 +515,62 @@ td {
   @include respond(tab-port) {
     height: 92rem !important;
   }
+}
+
+/// COMING SOON
+.comming-soon {
+  display: none;
+  position: fixed;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 79, 148, 0.769),
+      rgba(0, 4, 41, 0.767)
+    ),
+    url(../../img/background.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+
+  @include respond(tab-land) {
+    display: flex;
+  }
+}
+.comming-soon h3 {
+  color: white;
+  font-weight: 200;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.comming-soon p {
+  color: white;
+  opacity: 0.8;
+}
+.shadow {
+  box-shadow: 10px 5px 10px #00000017;
+}
+
+.profile-form-inner {
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.pass-section-inner {
+  display: flex;
+  justify-content: center;
+}
+.txt-center {
+  text-align: center;
 }

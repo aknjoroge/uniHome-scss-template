@@ -7,101 +7,92 @@
     <title>Unihome | My house</title>
     <link rel="stylesheet" href="./../assets/scss/build/main.css" />
     <link rel="stylesheet" href="./../assets/scss/build/owners.css" />
+    <link rel="stylesheet" href="./../assets/scss/build/layout.css" />
   </head>
   <body>
-    <header class="header-custom">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion">
-            <li class="navlist">
-
-              <li class="navlist"> <a href="home.html">
-                <img
-                  class="home-logo"
-                  src="../assets/img/logo.png"
-                  alt=""
-                  srcset=""
-                />
-              </a></li>
-              <a class="nav-link-item" href="allowners.html"> House Owners</a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="allusers.html">Users </a>
-            </li>
-
-            <li class="navlist">
-              <a class="nav-link-item" href="bills.html">Bills </a>
-            </li>
+    <div class="container">
+      <!--Header column-->
+      <div class="columns">
+        <div class="column">
+          <header class="header-custom">
+            <nav class="navbar">
+              <ul class="navbar-list">
+                <div class="naviagtion">
+                  <li class="navlist">
+          
+                    <li class="navlist"> <a href="home.html">
+                      <img
+                        class="home-logo"
+                        src="../assets/img/logo.png"
+                        alt=""
+                        srcset=""
+                      />
+                    </a></li>
+                    <a class="nav-link-item" href="allowners.html"> House Owners</a>
+                  </li>
+                  <li class="navlist">
+                    <a class="nav-link-item" href="allusers.html">Users </a>
+                  </li>
+          
+                  <li class="navlist">
+                    <a class="nav-link-item" href="bills.html">Bills </a>
+                  </li>
+                  
+                </div>
             
-          </div>
-      
-          <div class="users">
-            <a class="btn" href="profile.html">Admin</a>
-
-          </div>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="content">
-      <div class="owner-main">
-
-        <ol type="1">
- 
-<!--item-->
-<li>
-<div class="owner-item-body">
-   
-  <div class="owner-item">
-    <h3  > 25 Aug 2020 18:23 </h3>
-    <h3 class="light">Transaction id : xpasosdasd</h3>
-    <h3 class="light">John Doe</h3>
-    <h3 class="light">0710xxxxx</h3>
- 
-  </div>
-  <div class="owner-item">
-    
-    <h3 class="light">Mpesa</h3>
-    <h3>
-      KSH 18,000
-    </h3>
- 
-  </div>
-  <div class="owner-item">
-    
-    <a class="btn btn--blue"  href="#">View Receipt</a>
-  </div>
-</div>
-</li>
-<!--End of item-->
- 
-        </ol>
-
-
-      
-
-      
-
-      
-  
-        
-        
-       
- 
-
- 
-
-      </div>
-    </div>
-    <footer>
-      <div class="navbar">
-        
-        <div class="creater">
-          <p>&copy; Unihome 2021</p>
-          <p>Powered by Techkey</p>
+                <div class="users">
+                  <a class="btn" href="profile.html">Admin</a>
+          
+                </div>
+              </ul>
+            </nav>
+          </header>
         </div>
-    
       </div>
-    </footer>
+
+      <!--Main column-->
+      <div class="columns">
+        <div class="column">
+          <ol type="1">
+
+            <!--item-->
+            <li class="shadow ">
+            <div class="owner-item-body border-green">
+            
+            <div class="owner-item">
+            <h3  > 25 Aug 2020 18:23 </h3>
+            <h3 class="light">Transaction id : xpasosdasd</h3>
+            <h3 class="light">John Doe</h3>
+            <h3 class="light">0710xxxxx</h3>
+            
+            </div>
+            <div class="owner-item">
+            
+            <h3 class="light">Mpesa</h3>
+            <h3>
+              KSH 18,000
+            </h3>
+            
+            </div>
+            <div class="owner-item">
+            
+            <a class="btn btn--blue"  href="#">View Receipt</a>
+            </div>
+            </div>
+            </li>
+            <!--End of item-->
+            
+                </ol>
+        </div>
+      </div>
+
+      <!--Footer column-->
+      <div class="columns">
+        <div class="column">
+          
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
