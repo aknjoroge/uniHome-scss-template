@@ -56,7 +56,12 @@
 .details {
   border-radius: 10px;
   min-width: 36rem;
-
+  @include respond(tab-land) {
+    min-width: 497px;
+  }
+  @include respond(phone-large) {
+    min-width: 0;
+  }
   padding: 2rem;
 }
 .detail-list-item {
@@ -85,8 +90,14 @@
   padding: 2rem;
   display: flex;
 
+  align-items: center;
+
   @include respond(phone-large) {
-    min-width: 25rem;
+    padding: 1rem;
+  }
+
+  @include respond(phone-large) {
+    min-width: 1rem;
     flex-direction: column;
   }
 }
@@ -120,7 +131,9 @@
     min-width: 166px;
   }
   @include respond(phone-large) {
-    min-width: 136px;
+    min-width: 83px;
+    height: 153px;
+    width: 176px;
   }
 }
 
@@ -148,8 +161,13 @@
   background-color: white;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.212);
   padding: 2rem;
-  width: 34rem;
+
   border-radius: 10px;
+
+  @include respond(tab-port) {
+    font-size: 13px;
+  }
+
 }
 .detail-table-list {
   font-size: 18px;
@@ -256,5 +274,16 @@
   }
   @include respond(phone) {
     font-size: 32px !important;
+  }
+}
+.column-desc {
+  min-width: 717px;
+  padding: 5rem !important;
+  @include respond(tab-land) {
+    min-width: 500px;
+  }
+  @include respond(phone-large) {
+    padding: 3rem !important;
+    min-width: 0;
   }
 }

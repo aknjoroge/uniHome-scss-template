@@ -42,3 +42,13 @@ Clone this repo
 ```
 git clone https://github.com/aknjoroge/uniHome-WebTemplate.git
 ```
+
+---
+
+## Responsive ness not implemented for
+
+### 1. users/locations.html
+
+### 2. users/myhouse.html
+
+### 3. users/profile.html

@@ -1178,6 +1178,12 @@ option {
   border-radius: 10px;
   min-width: 36rem;
   padding: 2rem; }
+  @media only screen and (max-width: 1200px) {
+    .details {
+      min-width: 497px; } }
+  @media only screen and (max-width: 750px) {
+    .details {
+      min-width: 0; } }
 
 .detail-list-item {
   margin-bottom: 10px;
@@ -1200,10 +1206,14 @@ option {
   flex-wrap: wrap;
   min-width: 36rem;
   padding: 2rem;
-  display: flex; }
+  display: flex;
+  align-items: center; }
   @media only screen and (max-width: 750px) {
     .media {
-      min-width: 25rem;
+      padding: 1rem; } }
+  @media only screen and (max-width: 750px) {
+    .media {
+      min-width: 1rem;
       flex-direction: column; } }
 
 @media only screen and (max-width: 750px) {
@@ -1233,7 +1243,9 @@ option {
       min-width: 166px; } }
   @media only screen and (max-width: 750px) {
     .details-logo {
-      min-width: 136px; } }
+      min-width: 83px;
+      height: 153px;
+      width: 176px; } }
 
 .details-content-media {
   display: flex;
@@ -1258,8 +1270,13 @@ option {
   background-color: white;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.212);
   padding: 2rem;
-  width: 34rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  /* only screen and is used to set scalling of website to web only and not when someone is printing the web-page
+        the media queries only apply to screens
+        */ }
+  @media only screen and (max-width: 900px) {
+    .booking-card {
+      font-size: 13px; } }
 
 .detail-table-list {
   font-size: 18px;
@@ -1355,7 +1372,18 @@ option {
 
 @media only screen and (max-width: 600px) {
   .details-name-hero {
-    font-size: 20px !important; } }
+    font-size: 32px !important; } }
+
+.column-desc {
+  min-width: 717px;
+  padding: 5rem !important; }
+  @media only screen and (max-width: 1200px) {
+    .column-desc {
+      min-width: 500px; } }
+  @media only screen and (max-width: 750px) {
+    .column-desc {
+      padding: 3rem !important;
+      min-width: 0; } }
 
 footer {
   background-color: #444;
