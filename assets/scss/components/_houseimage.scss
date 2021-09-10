@@ -1,6 +1,7 @@
 .images {
   // background-color: red;
   width: 201px;
+  min-width: 201px;
   height: 201px;
   display: flex;
   border-radius: 16px;
@@ -22,15 +23,21 @@
   box-shadow: 1px 3px 4px #00000078;
   cursor: pointer;
   z-index: 1000;
+  @include respond(phone-large) {
+    position: relative;
+  }
 }
 .next {
+  //DISSABLED
+  display: none;
+  //END OF DISSABLE
   width: 45px;
   height: 45px;
   background-color: white;
   position: absolute;
   top: 82px;
   left: 184px;
-  display: flex;
+  // display: flex;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -38,6 +45,9 @@
   box-shadow: 1px 3px 4px #00000078;
   cursor: pointer;
   z-index: 1000;
+  @include respond(phone-large) {
+    display: none;
+  }
 }
 /*
 .images:hover ~ .item-details .item-name {
@@ -81,7 +91,7 @@
 // }
 
 .house-image {
-  margin-right: 4px;
+  // margin-right: 4px;
   height: 200px;
   width: 200px;
 }
@@ -89,4 +99,11 @@
 .home-svg {
   transition: all 0.4s;
   transition-delay: 0.3s;
+}
+.add-image-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }

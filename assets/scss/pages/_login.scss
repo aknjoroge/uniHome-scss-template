@@ -169,7 +169,7 @@ input::placeholder {
   width: 100%;
   background-color: #000000c7;
   // height: 100vh;
-  height: 100%;
+  height: 111vh;
 }
 
 .forgot-password {
@@ -239,5 +239,43 @@ input::placeholder {
 .admin-login-container {
   @include respond(phone) {
     display: inherit;
+  }
+}
+.login-main-card {
+  @include respond(tab-land) {
+    width: 18rem !important;
+    font-size: 14px !important;
+  }
+  @include respond(phone-large) {
+    width: 17rem !important;
+    padding: 20px !important;
+    font-size: 14px;
+  }
+}
+.loginForm {
+  @include respond(phone-large) {
+    width: 18rem;
+  }
+}
+
+.loginForm .form_group {
+  @include respond(phone-large) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10px;
+  }
+}
+#registerForm .form_group {
+  @include respond(phone-large) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10px;
+  }
+}
+.container {
+  @include respond(phone-large) {
+    padding: 0 !important;
   }
 }

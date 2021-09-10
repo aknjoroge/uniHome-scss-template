@@ -1,334 +1,286 @@
- 
-    <header class="header-custom">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion">
-            <li class="navlist">
+<header class="header-custom">
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <div class="naviagtion">
+        <li class="navlist">
 
-              <li class="navlist"> <a href="home.html">
-                <img
-                  class="home-logo"
-                  src="../assets/img/logo.png"
-                  alt=""
-                  srcset=""
-                />
-              </a></li>
-              <a class="nav-link-item" href="myhouse.html"> My houses</a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="addhouse.html">Add a House </a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="bookings.html">Bookings </a>
-            </li>
-            <li class="navlist">
-              <a class="nav-link-item" href="bills.html">Bills </a>
-            </li>
-            
-          </div>
+          <li class="navlist"> <a href="home.html">
+            <img
+              class="home-logo"
+              src="../assets/img/logo.png"
+              alt=""
+              srcset=""
+            />
+          </a></li>
+          <a class="nav-link-item" href="home.html"> Available houses</a>
+        </li>
+        <li class="navlist">
+          <a class="nav-link-item" href="locations.html">House Locations</a>
+        </li>
+         
+      </div>
       
-          <div class="users">
-            <a class="btn" href="#">Mary doe</a>
+      <div class="users">
+        <!-- <div class="user-header-dp">
+          <img src="../assets/img/background.jpg"  alt="" srcset="">
+          <h3>John</h3>
+        </div> -->
 
+        <a id="login-state-btn" class="btn btn--green" href="#">Register</a>
+
+      </div>
+    </ul>
+  </nav>
+</header>
+
+  <div class="contents">
+      <div class="hero">
+        <div class="holder">
+          <h2 class="details-name">
+            Pink House
+          </h2>
+          <div class="hero-details">
+            <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            <p>
+              Nyawitta</p> 
+              <span class="mgl mgr">-</span>
+            <p  >john Adero street</p>
           </div>
-        </ul>
-      </nav>
-    </header>
+          
 
-    <div class="profile-content">
-
-    
-        <div class="panel longer">
-            
-          <div class="content-profile ">
-
-            <div class="available">
-
-                <p class="password-section"> Manual Booking</p>
-           
-                <div class="manual-option">
-
-                  <h3> <label for="">House Available</label></h3>
-                <select class="inputfield" name="" id="">
-                    <option value="">True</option>
-                    <option value="">False</option>
-                </select>
-                <p>This will Enable or Disable the house, leave it to true if no one has booked it </p>
-                </div>
-
-
-            </div>
-
-            <hr>
-            <p class="password-section"> Details Update</p>
-            <div class="profile">
-            <form class="name-form" >
-              <div class="profile-form" >
-                <div>
-                  <label>Name</label>
-                  <input
-                    class="inputfield"
-                    placeholder="Pink house"
-                    type="text"
-               
-                    id=""
-                    required
-                  />
-                  
-                  <label>Estate Name</label>
-                  <input
-                    class="inputfield"
-                    placeholder="John Adero"
-                    type="text"
-                    
-                    id=""
-                    required
-                  />
-                </div>
-                <div class="price-detail">
-                  
-                  <label>Price</label>
-                  <input
-                    class="inputfield"
-                    placeholder="18000"
-                    type="number"
-               
-                    id=""
-                    required
-                  />
-                  <label>Location</label>
-                <select  class="inputfield" name="" >
-                    <option value="nyawitta">Nyawitta</option>
-                    <option value="nyawitta">Across</option>
-                    <option value="nyawitta">Mumias</option>
-                    <option value="nyawitta">poster</option>
-                </select>
-                   
-                </div>
-               
-      
-                <div class="form_group-input">
-                  <input class="btn btn--blue" type="submit" value="update " />
-                </div>
-              </div>
-              
-            
-            
-             
-            </form>
-            
-            <hr>
-
-            <div class="options-section">
-
-
-              <p class="password-section"> House options</p>
-  
-             
-              <form>
-              
-               
-                <div class="profile-form-password" >
-                  <div class="options-section-one">
-  
-                    <label>Shower</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not Present</option>
-                        <option value="present">  Present</option>
-                    </select>
-  
-                    <label>Tiles</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="present">  Present</option>
-                        <option value="not">Not Present</option>
-                    </select>
-                    <label>Tokens</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not"> Unavailable</option>
-                        <option value="present">  available</option>
-                    </select>
-                  
-                    <label>Ceiling</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not Present</option>
-                        <option value="present">  Present</option>
-                    </select>
-                  </div>
-                 
-        
-                  <div class="new-pass">
-  
-                    
-                    <label>Beddings</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not Replaced</option>
-                        <option value="present">  Replaced</option>
-                    </select>
-                    
-                    <label>Table</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not available</option>
-                        <option value="present">  available</option>
-                    </select>
-                    <label>Chair</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">Not available</option>
-                        <option value="present">  available</option>
-                    </select>
-  
-                    <label>Discount</label>
-                    <select  class="inputfield" name="" id="">
-                        <option value="not">No Discount</option>
-                        <option value="present">  20%</option>
-                        <option value="present">  50%</option>
-                        <option value="present">  70%</option>
-                        <option value="present">  90%</option>
-                    </select>
-                    
-                 
-        
-                  </div>
-                
-                  
-              </div>
-              <div class="form_group-input">
-                <input class="btn btn--blue" type="submit" value="update " />
-              </div>
-                
-               
-              
-               
-              </form>
-            </div>
-
+          <a class="btn btn--plain" href="#">View in map</a>
+        </div>
 
           
-           
-            <hr>
 
-            
-
-            <div class="description-section">
-                <form >
-                    <p class="password-section"> House info</p>
-                 <div  >
-                   <br>
-                  <p class="password-section"> Description</p>
-                    
-                    <textarea     name="" id="" cols="30" rows="10"></textarea>
-                     
-                    <p class="password-section"> Terms and conditions info</p>
-                    <textarea  name="" id="" cols="30" rows="10"></textarea>
-    
-                    <p class="password-section"> House Rules</p>
-                    <textarea  name="" id="" cols="30" rows="10"></textarea>
-    
-
-                 </div>
-                 <div class="form_group-input">
-                    <input class="btn btn--blue" type="submit" value="update " />
-                  </div>
-                </form>
-            </div>
-             <hr>
-             
-             <p class="password-section"> Media</p>
-             <div>
-
-                <div class="media">
-
-                  <div >
-                    <p>Compound</p>
-                    <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                  <div> 
-                    <p>House Floor</p><img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  /></div>
-
-                  <div>
-                    <p>House interior 1</p> <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                  <div>
-                    <p>House interior 2</p>
-                    <img
-                    class="details-logo"
-                    src="../assets/img/logo.png"
-                    alt=""
-                    srcset=""
-                  /></div>
-                 
-                  </div>
-
-             </div>
-             <br>
-            
-             <br>
-            
-
-
-           
-           <hr>
-           <div class="house-btns">
-             <a class="btn btn--red" href="#">Delete House</a>
-             <a class="btn btn--green" href="#">Promote This House</a>
-             
-            </div>
-            <p class="house-btn-text"  >Promote this house to reach more potential customers</p>
-         
-           <!--End-->
-
-            </div>
-          </div>
-        </div>
       </div>
-    <footer>
-      <div class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion-footer">
-            <li class="navlist">
 
-             
-
-             <div class="site">
-              <a class="footer-link-item" href="#"> Site Map</a>
+      <div class="details-content">
+          <div class="details">
+            <h3 class="detail-headings" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+              </svg>
+              House Details</h3>
+            <ol type="i" class="detail-list">
+              <!--item-->
+                 <li>
+              <table class="details-table table-animate">
+                <tr class="detail-table-list">
+                  <td >Shower</td>
+                  <td>Tiles</td>
+                </tr>
+                <tr>
+                  <td  class="detail-table-list-xl" >
+                  Bathing shower present, including shower heater
+                  </td>
+                  <td class="detail-table-list-xl">Floor tiles are unavailable</td>
+                </tr>
+              </table>
+             </li>
+              <!--End of item-->
+             <br>
+              <!--item-->
+                 <li>
+              <table class="details-table table-animate">
+                <tr class="detail-table-list">
+                  <td>Tokens</td>
+                  <td>Ceiling</td>
+                </tr>
+                <tr>
+                  <td class="detail-table-list-xl">
+                 Tokens are not in use, electricity is paid by administration
+                  </td>
+                  <td class="detail-table-list-xl" > House Does not have a Ceiling</td>
+                </tr>
+              </table>
+             </li>
+              <!--End of item-->
+              <br>
+              <!--item-->
+                 <li>
+              <table class="details-table table-animate">
+                <tr class="detail-table-list">
+                  <td>Bedding Replacement</td>
+                  <td>furniture</td>
+                </tr>
+                <tr>
+                  <td class="detail-table-list-xl">
+                 Old and worn out beddings are replaced by the administration
+                  </td>
+                  <td class="detail-table-list-xl">Two chairs and one table are available</td>
+                </tr>
+              </table>
+             </li>
+              <!--End of item-->
+              <br>
+              <!--item-->
+                 <li>
+              <table class="details-table table-animate">
+                <tr class="detail-table-list">
                
-                <ul>
-                  <li> <a class="sitemap-link" href="#"> Profile</a> </li>
-                  <li> <a class="sitemap-link" href="#">Report an error </a> </li>
-                  <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
-                </ul>
-              
-             </div>
-
-            </li>
-     
+                  <td>Price</td>
+                   
+                </tr>
+                <tr>
+                  <td class="detail-table-list-xl">
+                    KSH 18,000
+                      </td>
+                  
+                </tr>
+              </table>
+             </li>
+              <!--End of item-->
+             
+             
+                </ol>
           </div>
+          <div class="description">
+             
+            <div class="detail-section">
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+              </svg></p>
+              <br>
+              <h3>Description</h3>
+          <p>    Well mainatined house, located in a fenced and secure environment. Damages that occur to the house are repaired on a monthly basis</p>
+            </div>
+            <br>
+            
+           <div class="details-terms-sec">
+            <h3>Terms and Conditions</h3>
+            <ol type="1">
+              <li>
+                Downpayment of 50% of the rent is required before moving in
+              </li>
+              <li>
+                Security gate closes at 10:00 PM ( for Security reasons)
+              </li>
+            </ol>
+           </div>
+           
+            <br>
+       
+          <div class="info detail-section">
+            <h3>Owner</h3>
+            <div class="info-owner">
+              <img
+          class="owner-dp"
+              src="../assets/img/logo.png"
+              alt=""
+              srcset=""
+            />
+                John Doe
+            </div>
+            <br>
+            <div class="detail-section">
+            <h3>Ratings</h3>
+           <p class="rating-txt">4.5</p>
+            
+            <a class="signup rating-add" href="#">Add a rating</a>
+        
+            </div>
+          </div>
+        
+        
+            
+         </div>
+
          
-          <div class="users">
-            <li class="navlist">
-              <a class="footer-link-item" href="#">About us</a>
-            </li>
-
-          </div>
-        </ul>
-        <div class="creater">
-          <p>&copy; Unihome 2021</p>
-          <p>Powered by Techkey</p>
-        </div>
 
       </div>
-    </footer>
+      <div class="details-content-media">
+        <div class="media">
+          <img
+          class="details-logo"
+          src="../assets/img/logo.png"
+          alt=""
+          srcset=""
+        /><img
+        class="details-logo"
+        src="../assets/img/logo.png"
+        alt=""
+        srcset=""
+      /><img
+      class="details-logo"
+      src="../assets/img/logo.png"
+      alt=""
+      srcset=""
+    /><img
+    class="details-logo"
+    src="../assets/img/logo.png"
+    alt=""
+    srcset=""
+  />
+        </div>
+
+        
+
+      </div>
+
+      <div id="map">
+        
+      </div>
+
+
+      <div class="hero-call booking">
+      
+        <div class="booking-card">
+          <svg class="alert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <div class="booking-info">
+           
+           <h3 class="call">
+             
+              Only 2 houses in the estate remaining !!!!
+              
+             <br>
+            WHAT ARE YOU WAITING FOR?</h3>
+            <a class="btn btn--blue" href="myhouse.html">Login to Book this House</a>
+            
+          </div>
+
+        </div>
+      </div>
+  </div>
+  <footer  >
+    <div class="navbar">
+      <ul class="navbar-list">
+        <div class="naviagtion-footer">
+          <li class="navlist">
+
+           
+
+           <div class="site">
+            <a class="footer-link-item" href="#"> Site Map</a>
+             
+              <ul>
+                <li>  <a class="sitemap-link" href="#">Admin</a> </li>
+                <li> <a class="sitemap-link" href="#">Owners </a> </li>
+                <li> <a class="sitemap-link" href="#">Login / signup </a> </li>
+                <li> <a class="sitemap-link" href="#"> Profile</a> </li>
+                <li> <a class="sitemap-link" href="#">Report an error </a> </li>
+                <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
+              </ul>
+            
+           </div>
+
+          </li>
+         
+          
+           
+        </div>
+         
+         
+      </ul>
+      <div class="creater">
+        <p>&copy; Unihome 2021</p>
+        <p>Powered by Techkey</p>
+      </div>
+
+    </div>
+  </footer>
+  

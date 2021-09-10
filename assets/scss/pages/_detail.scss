@@ -246,3 +246,15 @@
 .longer {
   height: 115rem !important;
 }
+
+.details-name-hero {
+  @include respond(tab-land) {
+    font-size: 50px;
+  }
+  @include respond(phone-large) {
+    font-size: 30px !important;
+  }
+  @include respond(phone) {
+    font-size: 32px !important;
+  }
+}

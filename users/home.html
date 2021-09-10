@@ -6,70 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unihome</title>
     <link rel="stylesheet" href="./../assets/scss/build/main.css" />
+    <link rel="stylesheet" href="./../assets/scss/build/layout.css" />
     <script defer src="../assets/js/main.js"></script>
     <script defer src="../assets/js/home.js"></script>
   </head>
   <body>
-
     <!--Under development-->
-    <div class="comming-soon">
+    <!-- <div class="comming-soon">
       <h3>Mobile version unavailable</h3>
-      <br>
+      <br />
       <p>Under Development</p>
-    </div>
+    </div> -->
     <!--END OF Under development-->
 
     <!--Start of preloader-->
     <div class="preloader home-page">
       <div class="loader">
-       <div>
-      <svg  class="preloader-icon"  xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
-        <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
-      </svg>
-    </div>
-        <h3 class="light text-title" >Fetching House Modules...</h3>
+        <div>
+          <svg
+            class="preloader-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-hourglass-split"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"
+            />
+          </svg>
+        </div>
+        <h3 class="light text-title">Fetching House Modules...</h3>
         <div class="text-container">
           <div class="text"></div>
         </div>
-        <p class="loader-ask">Please wait </p>
+        <p class="loader-ask">Please wait</p>
       </div>
     </div>
-<!--End of preloader-->
-<header class="header-custom">
-  <nav class="navbar">
-    <ul class="navbar-list">
-      <div class="naviagtion">
-        <li class="navlist">
+    <!--End of preloader-->
 
-          <li class="navlist"> <a href="home.html">
-            <img
-              class="home-logo"
-              src="../assets/img/logo.png"
-              alt=""
-              srcset=""
-            />
-          </a></li>
-          <a class="nav-link-item" href="home.html"> Available houses</a>
-        </li>
-        <li class="navlist">
-          <a class="nav-link-item" href="locations.html">House Locations</a>
-        </li>
-         
+    <div class="container">
+      <!--header container-->
+      <div class="columns">
+        <div class="column">
+          <header class="header-custom">
+            <nav class="navbar">
+              <ul class="navbar-list">
+                <div class="naviagtion">
+                  <li class="navlist">
+          
+                    <li class="navlist"> <a href="home.html">
+                      <img
+                        class="home-logo"
+                        src="../assets/img/logo.png"
+                        alt=""
+                        srcset=""
+                      />
+                    </a></li>
+                    <a class="nav-link-item" href="home.html"> Available houses</a>
+                  </li>
+                  <li class="navlist">
+                    <a class="nav-link-item" href="locations.html">House Locations</a>
+                  </li>
+                   
+                </div>
+                
+                <div class="users">
+                  <!-- <div class="user-header-dp">
+                    <img src="../assets/img/background.jpg"  alt="" srcset="">
+                    <h3>John</h3>
+                  </div> -->
+          
+                  <a id="login-state-btn" class="btn btn--green" href="#">Register</a>
+          
+                </div>
+              </ul>
+            </nav>
+          </header>
+        </div>
       </div>
-      
-      <div class="users">
-        <!-- <div class="user-header-dp">
-          <img src="../assets/img/background.jpg"  alt="" srcset="">
-          <h3>John</h3>
-        </div> -->
+ <!--End header container-->
 
-        <a id="login-state-btn" class="btn btn--green" href="#">Register</a>
-
-      </div>
-    </ul>
-  </nav>
-</header>
-
+ <!--main Content-->
+ <div class="columns">
+   <div class="column">
+     
     <div class="home-hero">
       <div>
           <h3>Find Any House in    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -79,6 +101,7 @@
           <div class="form_group">
             
             <input
+            style="width: 100%;"
               class="inputfield search--input"
               placeholder="location"
               type="text"
@@ -102,578 +125,699 @@
         </div>
 
     </div>
+   </div>
+ </div>
+ <!-- End main Content-->
 
-    <div class="page-section">
-      <div>     
-      <div class=" description home-sidepanel">
-        <h3>Locations <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
-        </svg></h3>
-        <ul class="side-location">
-          <li>Nyawitta</li>
-          
-          <li>Mabungo</li>
-          <li>Mbwa Kali</li>
-          <li>Poster</li>
-        </ul>
-      
-       <div class="more">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-        </svg>
+<div class="divider">
+  <div></div>
+</div>
+ <div class="column">
+  <div class="section-name " >
+
+    <h3 class="holder-title" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv-fill" viewBox="0 0 16 16">
+      <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z"/>
+    </svg>  Adds  
+  </h3>
+  <p class="mgl">Premium houses</p>
+  </div>
+
+
+  <div>
+   <div class="add-container">
+
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
        </div>
-      </div>
-      <div class=" description home-sidepanel">
-        <h3>Pricing <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
-        </svg></h3>
-        <ul class="side-location-price">
-          <li> <span class="green"> ></span>   KSH 10,000</li>
-          <li > <span class="green"> ></span> KSH 15,000  </li>
-          <li > <span class="green"> ></span> KSH 20,000  </li>
-          <li > <span class="green"> ></span> KSH 30,000  </li>
-         
-        </ul>       
-      </div>
-
-      <div class=" description home-sidepanel-two">
-        <h3> Beds
-          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentcolor"><rect fill="none" height="24" width="24"/><path d="M12,3L4,9v12h16V9L12,3z M9.75,12.5c0.69,0,1.25,0.56,1.25,1.25S10.44,15,9.75,15S8.5,14.44,8.5,13.75S9.06,12.5,9.75,12.5z M17,18h-1v-1.5H8V18H7v-7h1v4.5h3.5V12H15c1.1,0,2,0.9,2,2V18z"/></svg>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
           
-        </h3>
-
-      <ul class="listbed">
-        <li>
-          <a href="#"> 1 bed</a>
-        </li>
-        <li>
-          <a href="#">  2 beds</a>
-        </li>
-      </ul>
-       
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
         
-      
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
        
-      </div>
-      <div class=" description home-sidepanel-two">
-        <h3>info <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-dotted" viewBox="0 0 16 16">
-          <path d="M8 0c-.176 0-.35.006-.523.017l.064.998a7.117 7.117 0 0 1 .918 0l.064-.998A8.113 8.113 0 0 0 8 0zM6.44.152c-.346.069-.684.16-1.012.27l.321.948c.287-.098.582-.177.884-.237L6.44.153zm4.132.271a7.946 7.946 0 0 0-1.011-.27l-.194.98c.302.06.597.14.884.237l.321-.947zm1.873.925a8 8 0 0 0-.906-.524l-.443.896c.275.136.54.29.793.459l.556-.831zM4.46.824c-.314.155-.616.33-.905.524l.556.83a7.07 7.07 0 0 1 .793-.458L4.46.824zM2.725 1.985c-.262.23-.51.478-.74.74l.752.66c.202-.23.418-.446.648-.648l-.66-.752zm11.29.74a8.058 8.058 0 0 0-.74-.74l-.66.752c.23.202.447.418.648.648l.752-.66zm1.161 1.735a7.98 7.98 0 0 0-.524-.905l-.83.556c.169.253.322.518.458.793l.896-.443zM1.348 3.555c-.194.289-.37.591-.524.906l.896.443c.136-.275.29-.54.459-.793l-.831-.556zM.423 5.428a7.945 7.945 0 0 0-.27 1.011l.98.194c.06-.302.14-.597.237-.884l-.947-.321zM15.848 6.44a7.943 7.943 0 0 0-.27-1.012l-.948.321c.098.287.177.582.237.884l.98-.194zM.017 7.477a8.113 8.113 0 0 0 0 1.046l.998-.064a7.117 7.117 0 0 1 0-.918l-.998-.064zM16 8a8.1 8.1 0 0 0-.017-.523l-.998.064a7.11 7.11 0 0 1 0 .918l.998.064A8.1 8.1 0 0 0 16 8zM.152 9.56c.069.346.16.684.27 1.012l.948-.321a6.944 6.944 0 0 1-.237-.884l-.98.194zm15.425 1.012c.112-.328.202-.666.27-1.011l-.98-.194c-.06.302-.14.597-.237.884l.947.321zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a6.999 6.999 0 0 1-.458-.793l-.896.443zm13.828.905c.194-.289.37-.591.524-.906l-.896-.443c-.136.275-.29.54-.459.793l.831.556zm-12.667.83c.23.262.478.51.74.74l.66-.752a7.047 7.047 0 0 1-.648-.648l-.752.66zm11.29.74c.262-.23.51-.478.74-.74l-.752-.66c-.201.23-.418.447-.648.648l.66.752zm-1.735 1.161c.314-.155.616-.33.905-.524l-.556-.83a7.07 7.07 0 0 1-.793.458l.443.896zm-7.985-.524c.289.194.591.37.906.524l.443-.896a6.998 6.998 0 0 1-.793-.459l-.556.831zm1.873.925c.328.112.666.202 1.011.27l.194-.98a6.953 6.953 0 0 1-.884-.237l-.321.947zm4.132.271a7.944 7.944 0 0 0 1.012-.27l-.321-.948a6.954 6.954 0 0 1-.884.237l.194.98zm-2.083.135a8.1 8.1 0 0 0 1.046 0l-.064-.998a7.11 7.11 0 0 1-.918 0l-.064.998zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-        </svg></h3>
-
-        <a href="#"> 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-          </svg>
-          Post a House</a>
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-          </svg>
-          Contact Admin</a>
        
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
         
-      
-       
-      </div>
-    </div>
-
-      <div class="home-items-holder">
-      <div>
-        <h3 class="holder-title" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv-fill" viewBox="0 0 16 16">
-          <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z"/>
-        </svg>  Adds  
-      </h3>
-      <p class="mgl">Premium houses</p>
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
         
-      <div class="add-container">
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+  
+     <!--Start of ADD item-->
+     <div class="add-item">
+        
+       <div class="images add-image">
+         <img class="house-image" src="../assets/img/background.jpg" alt="">
+       </div>
+       <div class="add-image-details add-details">
+         <h3 class="item-name"> 
+           Pink house
+         </h3>
+          
+         <div class="item-location-details">
+           <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+           </svg>
+           <p class="item-estate">
+             Nyawitta</p> 
+           <p class="item-loc">john Adero street</p>
+         </div>
+         <br>
+        
+         <h3>KSH 18,000</h3>
+          
+       </div>
+    
+       
+       
+     </div>
+     <!--End ADD of item-->
+   
 
-     
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
 
-              </div>
-           
-              <div class="details-end add-price">
-                
+   </div>
+  </div>
 
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
 
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-            <!--Start of ADD item-->
-            <div class="add-item">
-               
-              <div class="images add-image">
-                <img class="house-image" src="../assets/img/background.jpg" alt="">
-              </div>
-              <div class="item-details add-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-           
-              <div class="details-end add-price">
-                
-
-                <h3>KSH 18,000</h3>
-             
-                 
-              </div>
-              
-            </div>
-            <!--End ADD of item-->
-          </div>
 
 </div>
-
-            <br>
-            <hr>
-            <br>
-  
-        <h3 class="holder-title" >>  All Houses <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-        </svg></h3>
-        <div class="content">
-          <div class="house-main">
-    
-    
-            <!--Start of item-->
-            <div class="item">
-              <div id="image-prev" class="prev"> <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m10.8 16c-.4 0-.7-.1-.9-.4l-6.8-6.7c-.5-.5-.5-1.3 0-1.8l6.8-6.7c.5-.5 1.2-.5 1.7 0s .5 1.2 0 1.7l-5.8 5.9 5.8 5.9c.5.5.5 1.2 0 1.7-.2.3-.5.4-.8.4"></path></svg></div>
-              <div id="image-next" class="next">
-                <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m5.3 16c .3 0 .6-.1.8-.4l6.8-6.7c.5-.5.5-1.3 0-1.8l-6.8-6.7c-.5-.5-1.2-.5-1.7 0s-.5 1.2 0 1.7l5.8 5.9-5.8 5.9c-.5.5-.5 1.2 0 1.7.2.3.5.4.9.4"></path></svg>
-              </div>
-              <div class="images">
-                <div class="img-array">
-
-                  <img class="house-image" src="../assets/img/background.jpg" alt="">
-                  <img class="house-image" src="../assets/img/background.jpg" alt="">
-                  <img class="house-image" src="../assets/img/background.jpg" alt="">
-                </div>
-             
-              </div>
-              <div class="item-details">
-                <h3 class="item-name"> 
-                  Pink house
-                </h3>
-                 
-                <div class="item-location-details">
-                  <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-                  <p class="item-estate">
-                    Nyawitta</p> 
-                  <p class="item-loc">john Adero street</p>
-                </div>
-                <br>
-               
-                
-
-              </div>
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
-                  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                  <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-                </svg>
-                <div class="details-menu">
-                  
-                  <table class="details-table">
-                    <tr>
-                      <td>Shower</td>
-                      <td>Tiles</td>
-                      <td>Tokens</td>
-                      <td>Ceiling</td>
-                    </tr>
-                    <tr>
-                      <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                      </svg></td>
-                      <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-all" viewBox="0 0 16 16">
-                        <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
-                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
-                      </svg></td>
-                      <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                      </svg></td>
-                      <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-all" viewBox="0 0 16 16">
-                        <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
-                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
-                      </svg></td>
-                    </tr>
-                  </table>
-                </div>
-                <h3 class="bed-no">
-                  
-<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#777"><rect fill="none" height="24" width="24"/><path d="M12,3L4,9v12h16V9L12,3z M9.75,12.5c0.69,0,1.25,0.56,1.25,1.25S10.44,15,9.75,15S8.5,14.44,8.5,13.75S9.06,12.5,9.75,12.5z M17,18h-1v-1.5H8V18H7v-7h1v4.5h3.5V12H15c1.1,0,2,0.9,2,2V18z"/></svg>
-                  2 Beds</h3>
-               
-              </div>
-              <div class="details-end">
-                <div class="banner" >
-                  <p class="banner-txt">new</p>
-                </div >
-
-                <h3>KSH 18,000</h3>
-              <a class="btn btn--green" href="details.html"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                </svg>
-                Details</a>
-                <div class="icons">
-                 <abbr class="like-icon" title="Like">
-                  <svg class="icon-heart" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                  </svg>
-                 </abbr>
-                 <abbr class="bookmark-icon" title="Add to bookmark">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/>
-                  </svg>
-                 </abbr>
-                </div>
-              </div>
-              
-            </div>
-            <!--End of item-->
-           
-            
-            
-    
  
-    
-          </div>
-      <div class="pagination">
-            <a class="btn btn--blue pagin" href="#">
-              <svg class="mgr" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
-                <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
-              </svg>
-              Prev
-              
-            </a>
-          <a class="btn btn--green pagin" href="#">Next
-            <svg class="mgl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-reverse-fill" viewBox="0 0 16 16">
-              <path d="M0 3a2 2 0 0 1 2-2h7.08a2 2 0 0 1 1.519.698l4.843 5.651a1 1 0 0 1 0 1.302L10.6 14.3a2 2 0 0 1-1.52.7H2a2 2 0 0 1-2-2V3zm9.854 2.854a.5.5 0 0 0-.708-.708L7 7.293 4.854 5.146a.5.5 0 1 0-.708.708L6.293 8l-2.147 2.146a.5.5 0 0 0 .708.708L7 8.707l2.146 2.147a.5.5 0 0 0 .708-.708L7.707 8l2.147-2.146z"/>
+<br>
+   <div class="column content">
+     <div class="section-name " >
+       
+      <h3 class="holder-title" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM3.5 5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+      </svg>  Filter  
+    </h3>
+    <p class="mgl">House Categories</p>
+     </div>
+     
+     <div class="columns-custom">
+
+     
+      
+      
+     <div>
+<br>
+      <h3>Locations <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
+      </svg></h3>
+
+      
+      
+      <form class="form-search location-search"> 
+
+          <input
+            class="inputfield search--input"
+            placeholder="Search for a location"
+            type="text"
+            name="searc"
+            id=""
+            required
+          />
+       
+         
+        
+          <a href="#">
+            <svg class="hero-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
           </a>
-          </div> 
-           
-        </div>
-      </div>
+          
+
+       </form>
+
+     </div>
+    <div>
+      <h3>Pricing <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
+      </svg></h3>
+<br>
+<span style="opacity: .9;">Ksh 15000</span>
+<input type="range" id="points" name="points" min="0" max="10">
+<br>
+   <p style="opacity: .8;">From Ksh 8,000 - 40,000</p>
+    </div>
+    <div>
+      <h3> Beds
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentcolor"><rect fill="none" height="24" width="24"/><path d="M12,3L4,9v12h16V9L12,3z M9.75,12.5c0.69,0,1.25,0.56,1.25,1.25S10.44,15,9.75,15S8.5,14.44,8.5,13.75S9.06,12.5,9.75,12.5z M17,18h-1v-1.5H8V18H7v-7h1v4.5h3.5V12H15c1.1,0,2,0.9,2,2V18z"/></svg>
+        
+      </h3>
+
+    
+
+    <ul class="listbed">
+      <li>
+        <a href="#"> 1 bed</a>
+      </li>
+      <li>
+        <a href="#">  2 beds</a>
+      </li>
+    </ul>
+    <br>
+     
     </div>
 
-  
+     </div>
+   </div>
+ 
 
-    <footer>
-      <div class="navbar">
-        <ul class="navbar-list">
-          <div class="naviagtion-footer">
-            <li class="navlist">
+<br>
 
-             
+<div class="column">
+  <div class="section-name">
+  <div class="divider">
+    <div></div>
+  </div>
 
-             <div class="site">
-              <a class="footer-link-item" href="#"> Site Map</a>
-               
-                <ul>
-                  <li>  <a class="sitemap-link" href="#">Admin</a> </li>
-                  <li> <a class="sitemap-link" href="#">Owners </a> </li>
-                  <li> <a class="sitemap-link" href="#">Login / signup </a> </li>
-                  <li> <a class="sitemap-link" href="#"> Profile</a> </li>
-                  <li> <a class="sitemap-link" href="#">Report an error </a> </li>
-                  <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
-                </ul>
-              
-             </div>
+  <h3 class="holder-title" >   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+  </svg> All Houses</h3>
+</div>
+   </div>
 
-            </li>
-            <li class="navlist">
-              <a class="footer-link-item" href="#">house list</a>
-            </li>
-            
-            <li class="navlist">
-              <a class="footer-link-item" href="#"> Register a House </a>
-            </li>
-          </div>
-          <div>
-          
-              <form class="form-search"> 
-                <div class="form_group">
-                  
-                  <input
-                    class="inputfield"
-                    placeholder="search"
-                    type="text"
-                    name="searc"
-                    id=""
-                    required
-                  />
-                </div>
-                 
-               
-                </form>
+   <div class="column content">
+     <!--Start of item-->
+     <div class="item border-green " style="border-radius: 28px;">
+      <a   id="image-prev"  class="prev image-prev-btn"> 
+        <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m5.3 16c .3 0 .6-.1.8-.4l6.8-6.7c.5-.5.5-1.3 0-1.8l-6.8-6.7c-.5-.5-1.2-.5-1.7 0s-.5 1.2 0 1.7l5.8 5.9-5.8 5.9c-.5.5-.5 1.2 0 1.7.2.3.5.4.9.4"></path></svg>
+      </a>
+      
+      <div class="images">
+        <div class="img-array img-array-container">
 
-               
-          </div>
-          <div class="users">
-            <li class="navlist">
-              <a class="footer-link-item" href="#">About us</a>
-            </li>
-
-          </div>
-        </ul>
-        <div class="creater">
-          <p>&copy; Unihome 2021</p>
-          <p>Powered by Techkey</p>
+          <img class="house-image" src="../assets/img/background.jpg" alt="">
+          <img class="house-image" src="../assets/img/background.jpg" alt="">
+          <img class="house-image" src="../assets/img/background.jpg" alt="">
         </div>
+     
+      </div>
+
+      <div id="image-next" class="next">
+        <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m5.3 16c .3 0 .6-.1.8-.4l6.8-6.7c.5-.5.5-1.3 0-1.8l-6.8-6.7c-.5-.5-1.2-.5-1.7 0s-.5 1.2 0 1.7l5.8 5.9-5.8 5.9c-.5.5-.5 1.2 0 1.7.2.3.5.4.9.4"></path></svg>
+      </div>
+      <div class="item-details">
+        <h3 class="item-name"> 
+          Pink house
+        </h3>
+         
+        <div class="item-location-details">
+          <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          <p class="item-estate">
+            Nyawitta</p> 
+          <p class="item-loc">john Adero street</p>
+        </div>
+        <br>
+       
+        
 
       </div>
-    </footer>
+      <div class="house-preview">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+          <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+          <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        <div class="details-menu">
+          
+          <table class="details-table">
+            <tr>
+              <td>Shower</td>
+              <td>Tiles</td>
+              <td>Tokens</td>
+              <td>Ceiling</td>
+            </tr>
+            <tr>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-all" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-all" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg></td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="bed-no">
+          
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#777"><rect fill="none" height="24" width="24"/><path d="M12,3L4,9v12h16V9L12,3z M9.75,12.5c0.69,0,1.25,0.56,1.25,1.25S10.44,15,9.75,15S8.5,14.44,8.5,13.75S9.06,12.5,9.75,12.5z M17,18h-1v-1.5H8V18H7v-7h1v4.5h3.5V12H15c1.1,0,2,0.9,2,2V18z"/></svg>
+          2 Beds</h3>
+       
+      </div>
+      <div class="details-end">
+        
+
+        <h3>KSH 18,000</h3>
+      <a class="btn btn--green" href="details.html"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg>
+        Details</a>
+        <div class="icons">
+         <abbr class="like-icon" title="Like">
+          <svg class="icon-heart" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg>
+         </abbr>
+         <abbr class="bookmark-icon" title="Add to bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/>
+          </svg>
+         </abbr>
+         
+        </div>
+         
+      </div>
+      
+    </div>
+    <!--End of item-->
+     <!--Start of item-->
+     <div class="item border-green " style="border-radius: 28px;">
+      <a   id="image-prev"  class="prev image-prev-btn"> 
+        <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m5.3 16c .3 0 .6-.1.8-.4l6.8-6.7c.5-.5.5-1.3 0-1.8l-6.8-6.7c-.5-.5-1.2-.5-1.7 0s-.5 1.2 0 1.7l5.8 5.9-5.8 5.9c-.5.5-.5 1.2 0 1.7.2.3.5.4.9.4"></path></svg>
+      </a>
+      
+      <div class="images">
+        <div class="img-array img-array-container">
+
+          <img class="house-image" src="../assets/img/background.jpg" alt="">
+          <img class="house-image" src="../assets/img/background.jpg" alt="">
+          <img class="house-image" src="../assets/img/background.jpg" alt="">
+        </div>
+     
+      </div>
+
+      <div id="image-next" class="next">
+        <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m5.3 16c .3 0 .6-.1.8-.4l6.8-6.7c.5-.5.5-1.3 0-1.8l-6.8-6.7c-.5-.5-1.2-.5-1.7 0s-.5 1.2 0 1.7l5.8 5.9-5.8 5.9c-.5.5-.5 1.2 0 1.7.2.3.5.4.9.4"></path></svg>
+      </div>
+      <div class="item-details">
+        <h3 class="item-name"> 
+          Pink house
+        </h3>
+         
+        <div class="item-location-details">
+          <svg class="home-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          <p class="item-estate">
+            Nyawitta</p> 
+          <p class="item-loc">john Adero street</p>
+        </div>
+        <br>
+       
+        
+
+      </div>
+      <div class="house-preview">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+          <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+          <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        <div class="details-menu">
+          
+          <table class="details-table">
+            <tr>
+              <td>Shower</td>
+              <td>Tiles</td>
+              <td>Tokens</td>
+              <td>Ceiling</td>
+            </tr>
+            <tr>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-all" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-all" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg></td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="bed-no">
+          
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#777"><rect fill="none" height="24" width="24"/><path d="M12,3L4,9v12h16V9L12,3z M9.75,12.5c0.69,0,1.25,0.56,1.25,1.25S10.44,15,9.75,15S8.5,14.44,8.5,13.75S9.06,12.5,9.75,12.5z M17,18h-1v-1.5H8V18H7v-7h1v4.5h3.5V12H15c1.1,0,2,0.9,2,2V18z"/></svg>
+          2 Beds</h3>
+       
+      </div>
+      <div class="details-end">
+        
+
+        <h3>KSH 18,000</h3>
+      <a class="btn btn--green" href="details.html"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg>
+        Details</a>
+        <div class="icons">
+         <abbr class="like-icon" title="Like">
+          <svg class="icon-heart" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg>
+         </abbr>
+         <abbr class="bookmark-icon" title="Add to bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/>
+          </svg>
+         </abbr>
+         
+        </div>
+         
+      </div>
+      
+    </div>
+    <!--End of item-->
+     
+   </div>
+
+   <div class="column">
+    <div class="pagination">
+      <a class="btn btn--blue pagin" href="#">
+        <svg class="mgr" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+          <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+        </svg>
+        Prev
+        
+      </a>
+    <a class="btn btn--green pagin" href="#">Next
+      <svg class="mgl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-reverse-fill" viewBox="0 0 16 16">
+        <path d="M0 3a2 2 0 0 1 2-2h7.08a2 2 0 0 1 1.519.698l4.843 5.651a1 1 0 0 1 0 1.302L10.6 14.3a2 2 0 0 1-1.52.7H2a2 2 0 0 1-2-2V3zm9.854 2.854a.5.5 0 0 0-.708-.708L7 7.293 4.854 5.146a.5.5 0 1 0-.708.708L6.293 8l-2.147 2.146a.5.5 0 0 0 .708.708L7 8.707l2.146 2.147a.5.5 0 0 0 .708-.708L7.707 8l2.147-2.146z"/>
+      </svg>
+    </a>
+    </div> 
+   </div>
+
+
+ 
+
+ <!--end of container-->
+    </div>
+      <footer  >
+        <div class="navbar">
+          <ul class="navbar-list">
+            <div class="naviagtion-footer">
+              <li class="navlist">
+  
+               
+  
+               <div class="site">
+                <a class="footer-link-item" href="#"> Site Map</a>
+                 
+                  <ul>
+                    <li>  <a class="sitemap-link" href="#">Admin</a> </li>
+                    <li> <a class="sitemap-link" href="#">Owners </a> </li>
+                    <li> <a class="sitemap-link" href="#">Login / signup </a> </li>
+                    <li> <a class="sitemap-link" href="#"> Profile</a> </li>
+                    <li> <a class="sitemap-link" href="#">Report an error </a> </li>
+                    <li> <a class="sitemap-link" href="#"> Help and F&Q </a></li>
+                  </ul>
+                
+               </div>
+  
+              </li>
+             
+              
+               
+            </div>
+             
+             
+          </ul>
+          <div class="creater">
+            <p>&copy; Unihome 2021</p>
+            <p>Powered by Techkey</p>
+          </div>
+  
+        </div>
+      </footer>
+  
   </body>
 </html>
